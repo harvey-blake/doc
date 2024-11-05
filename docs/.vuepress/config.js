@@ -56,7 +56,7 @@ const solidity = [
 export default defineUserConfig({
   lang: 'zh-CN',
   title: 'Harvey Blake',
-  description: 'A documentation site for Harvey Blake.',
+  description: '专注于核心技术和工具的使用方法、最佳实践及常见问题解决方案，为您的开发提供帮助！',
 
   plugins: [
     searchPlugin({
@@ -74,7 +74,7 @@ export default defineUserConfig({
 
   // 设置主题配置
   theme: defaultTheme({
-    logo: 'https://vuejs.press/images/hero.png',
+    logo: './images/logo.png',
 
     // 配置导航栏
     navbar: [

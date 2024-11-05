@@ -1,7 +1,7 @@
 ---
 home: true
 title: 首页
-heroImage: https://vuejs.press/images/hero.png
+heroImage: ./images/logo.png
 actions:
   - text: 联系作者
     link: https://t.me/eduvue

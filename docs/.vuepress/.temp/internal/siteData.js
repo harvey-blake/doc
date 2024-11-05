@@ -1,4 +1,4 @@
-export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"zh-CN\",\"title\":\"Harvey Blake\",\"description\":\"A documentation site for Harvey Blake.\",\"head\":[],\"locales\":{}}")
+export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"zh-CN\",\"title\":\"Harvey Blake\",\"description\":\"专注于核心技术和工具的使用方法、最佳实践及常见问题解决方案，为您的开发提供帮助！\",\"head\":[],\"locales\":{}}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()
