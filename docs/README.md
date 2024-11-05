@@ -7,10 +7,6 @@ actions:
     link: https://t.me/eduvue
     type: primary
 
-  - text: Get Started
-    link: /VuePress.html
-    type: primary
-
 features:
   - title: 项目概览：
     details: 介绍我所涉及的主要项目，包括项目的目标、使用的技术栈和实现思路。
