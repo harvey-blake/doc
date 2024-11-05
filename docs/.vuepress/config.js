@@ -116,10 +116,10 @@ export default defineUserConfig({
 
     lastUpdatedText: '上次更新',
 
-    // repo: 'harvey-blake/doc', // 替换为您的 GitHub 仓库
-    // editLinks: true, // 启用编辑链接
-    // docsDir: 'docs',
-    // editLinkText: '编辑此页',
+    repo: 'harvey-blake/doc', // 替换为您的 GitHub 仓库
+    editLinks: true, // 启用编辑链接
+    docsDir: 'docs',
+    editLinkText: '编辑此页',
     contributors: false,
     // sidebarDepth: 0,
   }),
