@@ -1,6 +1,6 @@
 
 
-# HelloVitalik (6行代码)
+# 1. HelloVitalik (6行代码)
 
 
 这一讲，我们会介绍`ethers.js`库，javascript在线编辑器`playcode`，并且我们会写第一个程序`HelloVitalik`：查询Vitalik的`ETH`余额，并输出在`console`中。

@@ -1,11 +1,9 @@
 import { defaultTheme } from '@vuepress/theme-default';
 import { defineUserConfig } from 'vuepress/cli';
 import { webpackBundler } from '@vuepress/bundler-webpack';
+import { searchPlugin } from '@vuepress/plugin-search'
 
 const VuePress = [
-  '/VuePress/getting-started',
-  '/VuePress/configuration',
-  '/VuePress/page',
   '/VuePress/VuePress1',
 ]
 
@@ -15,6 +13,27 @@ const ethers = [
   '/ethers/ReadContract',
   '/ethers/SendETH',
   '/ethers/WriteContract',
+  '/ethers/DeployContract',
+  '/ethers/Event',
+  '/ethers/ContractListener',
+  '/ethers/EventFilter',
+  '/ethers/Units',
+  '/ethers/staticCall',
+  '/ethers/ERC721Check',
+  '/ethers/EncodeCalldata',
+  '/ethers/HDwallet',
+  '/ethers/MultiTransfer',
+  '/ethers/MultiCollect',
+  '/ethers/MerkleTree',
+  '/ethers/Signature',
+  '/ethers/Mempool',
+  '/ethers/DecodeTx',
+  '/ethers/VanityAddress',
+  '/ethers/ReadAnyData',
+  '/ethers/frontrun',
+  '/ethers/ERC20Checker',
+  '/ethers/Flashbots',
+  '/ethers/eip712'
 ]
 
 
@@ -22,6 +41,20 @@ export default defineUserConfig({
   lang: 'zh-CN',
   title: 'Harvey Blake',
   description: 'A documentation site for Harvey Blake.',
+
+  plugins: [
+    searchPlugin({
+      // 可选的配置项
+      locales: {
+        '/': {
+          placeholder: '搜索',
+        },
+      },
+      // 其他配置选项
+      maxSuggestions: 10, // 最大显示的搜索建议条目数量
+    }),
+  ],
+
 
   // 设置主题配置
   theme: defaultTheme({
@@ -31,23 +64,16 @@ export default defineUserConfig({
     navbar: [
       { text: '首页', link: '/' },
       {
-        text: 'VuePress',
-        children: VuePress,
-      },
-      {
         text: 'Ethers v6',
         children: ethers,
-      }
+      },
+      {
+        text: 'Markdown',
+        children: VuePress,
+      },
+
     ],
     sidebar: {
-      '/VuePress/': [
-        {
-          text: 'VuePress指南',
-          collapsible: false,
-          children: VuePress,
-        },
-      ],
-
       // 对于 /ethers/ 下的页面，显示 Ethers 极简教程的侧边栏
       '/ethers/': [
         {
@@ -57,6 +83,15 @@ export default defineUserConfig({
           children: ethers,
         },
       ],
+      '/VuePress/': [
+        {
+          text: 'Markdown基本语法',
+          collapsible: false,
+          children: VuePress,
+        },
+      ],
+
+
     },
 
     // lastUpdated: false,

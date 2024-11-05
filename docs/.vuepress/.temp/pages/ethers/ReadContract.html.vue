@@ -1,4 +1,4 @@
-<template><div><h1 id="读取合约信息" tabindex="-1"><a class="header-anchor" href="#读取合约信息"><span>读取合约信息</span></a></h1>
+<template><div><h1 id="_3-读取合约信息" tabindex="-1"><a class="header-anchor" href="#_3-读取合约信息"><span>3. 读取合约信息</span></a></h1>
 <h2 id="contract类" tabindex="-1"><a class="header-anchor" href="#contract类"><span><code v-pre>Contract</code>类</span></a></h2>
 <p>在<code v-pre>ethers</code>中，<code v-pre>Contract</code>类是部署在以太坊网络上的合约（<code v-pre>EVM</code>字节码）的抽象。通过它，开发者可以非常容易的对合约进行读取<code v-pre>call</code>和交易<code v-pre>transaction</code>，并可以获得交易的结果和事件。以太坊强大的地方正是合约，所以对于合约的操作要熟练掌握。</p>
 <h2 id="创建contract变量" tabindex="-1"><a class="header-anchor" href="#创建contract变量"><span>创建<code v-pre>Contract</code>变量</span></a></h2>
@@ -15,19 +15,19 @@
 <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre><code><span class="line"><span class="token keyword">const</span> contract <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ethers<span class="token punctuation">.</span>Contract</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">address</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">abi</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">signer</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><strong>注意</strong> <code v-pre>ethers</code>中的<code v-pre>call</code>指的是只读操作，与<code v-pre>solidity</code>中的<code v-pre>call</code>不同。</p>
-<h2 id="读取合约信息-1" tabindex="-1"><a class="header-anchor" href="#读取合约信息-1"><span>读取合约信息</span></a></h2>
+<h2 id="读取合约信息" tabindex="-1"><a class="header-anchor" href="#读取合约信息"><span>读取合约信息</span></a></h2>
 <h3 id="_1-创建provider" tabindex="-1"><a class="header-anchor" href="#_1-创建provider"><span>1. 创建Provider</span></a></h3>
 <p>我们使用Infura节点的API Key创建<code v-pre>Provider</code>（见<RouteLink to="/ethers/Provider.html">第2讲：Provider</RouteLink>）：</p>
 <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> ethers <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"ethers"</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token comment">// 利用Infura的rpc节点连接以太坊网络</span></span>
-<span class="line"><span class="token comment">// 准备Infura API Key, 教程：https://github.com/AmazingAng/WTFSolidity/blob/main/Topics/Tools/TOOL02_Infura/readme.md</span></span>
+<span class="line"></span>
 <span class="line"><span class="token keyword">const</span> <span class="token constant">INFURA_ID</span> <span class="token operator">=</span> <span class="token string">''</span></span>
 <span class="line"><span class="token comment">// 连接以太坊主网</span></span>
 <span class="line"><span class="token keyword">const</span> provider <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ethers<span class="token punctuation">.</span>JsonRpcProvider</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://mainnet.infura.io/v3/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">INFURA_ID</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span></span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="_2-创建只读contract实例" tabindex="-1"><a class="header-anchor" href="#_2-创建只读contract实例"><span>2. 创建只读Contract实例</span></a></h3>
 <p>创建只读Contract实例需要填入<code v-pre>3</code>个参数，分别是合约地址，合约<code v-pre>abi</code>和<code v-pre>provider</code>变量。合约地址可以在网上查到，<code v-pre>provider</code>变量上一步我们已经创建了，那么<code v-pre>abi</code>怎么填？</p>
-<p><code v-pre>ABI</code> (Application Binary Interface) 是与以太坊智能合约交互的标准，更多内容见<a href="https://github.com/AmazingAng/WTF-Solidity/blob/main/27_ABIEncode/readme.md" target="_blank" rel="noopener noreferrer">WTF Solidity教程第27讲: ABI编码</a>。<code v-pre>ethers</code>支持两种<code v-pre>abi</code>填法：</p>
+<p><code v-pre>ABI</code> (Application Binary Interface) 是与以太坊智能合约交互的标准。<code v-pre>ethers</code>支持两种<code v-pre>abi</code>填法：</p>
 <ul>
 <li><strong>方法1.</strong>  直接输入合约<code v-pre>abi</code>。你可以从<code v-pre>remix</code>的编译页面中复制，在本地编译合约时生成的<code v-pre>artifact</code>文件夹的<code v-pre>json</code>文件中得到，或者从<code v-pre>etherscan</code>开源合约的代码页面得到。我们用这个方法创建<code v-pre>WETH</code>的合约实例：</li>
 </ul>
@@ -95,7 +95,7 @@
 <span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> ethers <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"ethers"</span><span class="token punctuation">;</span></span>
 <span class="line"></span>
 <span class="line"><span class="token comment">// 利用Alchemy的rpc节点连接以太坊网络</span></span>
-<span class="line"><span class="token comment">// 准备 alchemy API 可以参考https://github.com/AmazingAng/WTFSolidity/blob/main/Topics/Tools/TOOL04_Alchemy/readme.md</span></span>
+<span class="line"></span>
 <span class="line"><span class="token keyword">const</span> <span class="token constant">ALCHEMY_MAINNET_URL</span> <span class="token operator">=</span> <span class="token string">'https://eth-mainnet.g.alchemy.com/v2/oKmOQKbneVkxgHZfibs-iFhIlIAl6HDN'</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token keyword">const</span> provider <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ethers<span class="token punctuation">.</span>JsonRpcProvider</span><span class="token punctuation">(</span><span class="token constant">ALCHEMY_MAINNET_URL</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"></span>

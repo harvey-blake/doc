@@ -1,0 +1,111 @@
+<template><div><h1 id="_7-检索事件" tabindex="-1"><a class="header-anchor" href="#_7-检索事件"><span>7. 检索事件</span></a></h1>
+<h2 id="事件-event" tabindex="-1"><a class="header-anchor" href="#事件-event"><span>事件 Event</span></a></h2>
+<p>智能合约释放出的事件存储于以太坊虚拟机的日志中。日志分为两个主题<code v-pre>topics</code>和数据<code v-pre>data</code>部分，其中事件哈希和<code v-pre>indexed</code>变量存储在<code v-pre>topics</code>中，作为索引方便以后搜索；没有<code v-pre>indexed</code>变量存储在<code v-pre>data</code>中，不能被直接检索，但可以存储更复杂的数据结构。</p>
+<p>以ERC20代币中的<code v-pre>Transfer</code>转账事件为例，在合约中它是这样声明的：</p>
+<div class="language-solidity line-numbers-mode" data-highlighter="prismjs" data-ext="solidity" data-title="solidity"><pre v-pre><code><span class="line"><span class="token keyword">event</span> <span class="token function">Transfer</span><span class="token punctuation">(</span><span class="token builtin">address</span> <span class="token keyword">indexed</span> <span class="token keyword">from</span><span class="token punctuation">,</span> <span class="token builtin">address</span> <span class="token keyword">indexed</span> to<span class="token punctuation">,</span> <span class="token builtin">uint256</span> amount<span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>它共记录了3个变量<code v-pre>from</code>，<code v-pre>to</code>和<code v-pre>amount</code>，分别对应代币的发出地址，接收地址和转账数量，其中<code v-pre>from</code>和<code v-pre>to</code>前面带有<code v-pre>indexed</code>关键字。转账时，<code v-pre>Transfer</code>事件会被记录，可以在<code v-pre>etherscan</code>中<a href="https://rinkeby.etherscan.io/tx/0x8cf87215b23055896d93004112bbd8ab754f081b4491cb48c37592ca8f8a36c7" target="_blank" rel="noopener noreferrer">查到</a>。</p>
+<p><img src="@source/ethers/img/7-1.png" alt="Transfer事件"></p>
+<p>从上图中可以看到，<code v-pre>Transfer</code>事件被记录到了EVM的日志中，其中<code v-pre>Topics</code>包含3个数据，分别对应事件哈希，发出地址<code v-pre>from</code>，和接收地址<code v-pre>to</code>；而<code v-pre>Data</code>中包含一个数据，对应转账数额<code v-pre>amount</code>。</p>
+<h2 id="检索事件" tabindex="-1"><a class="header-anchor" href="#检索事件"><span>检索事件</span></a></h2>
+<p>我们可以利用<code v-pre>Ethers</code>中合约类型的<code v-pre>queryFilter()</code>函数读取合约释放的事件。</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre><code><span class="line"><span class="token keyword">const</span> transferEvents <span class="token operator">=</span> <span class="token keyword">await</span> contract<span class="token punctuation">.</span><span class="token function">queryFilter</span><span class="token punctuation">(</span><span class="token string">'事件名'</span><span class="token punctuation">,</span> 起始区块<span class="token punctuation">,</span> 结束区块<span class="token punctuation">)</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><code v-pre>queryFilter()</code>包含3个参数，分别是事件名（必填），起始区块（选填），和结束区块（选填）。检索结果会以数组的方式返回。</p>
+<p><strong>注意</strong>：要检索的事件必须包含在合约的<code v-pre>abi</code>中。</p>
+<h2 id="例子-检索weth合约中的transfer事件" tabindex="-1"><a class="header-anchor" href="#例子-检索weth合约中的transfer事件"><span>例子：检索<code v-pre>WETH</code>合约中的<code v-pre>Transfer</code>事件</span></a></h2>
+<ol>
+<li>
+<p>创建<code v-pre>provider</code>。</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> ethers <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"ethers"</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token comment">// 利用Alchemy的rpc节点连接以太坊网络</span></span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">const</span> <span class="token constant">ALCHEMY_GOERLI_URL</span> <span class="token operator">=</span> <span class="token string">'https://eth-goerli.alchemyapi.io/v2/GlaeWuylnNM3uuOo-SAwJxuwTdqHaY5l'</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token keyword">const</span> provider <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ethers<span class="token punctuation">.</span>JsonRpcProvider</span><span class="token punctuation">(</span><span class="token constant">ALCHEMY_GOERLI_URL</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>创建包含检索事件的<code v-pre>abi</code>。</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre><code><span class="line"><span class="token comment">// WETH ABI，只包含我们关心的Transfer事件</span></span>
+<span class="line"><span class="token keyword">const</span> abiWETH <span class="token operator">=</span> <span class="token punctuation">[</span></span>
+<span class="line">    <span class="token string">"event Transfer(address indexed from, address indexed to, uint amount)"</span></span>
+<span class="line"><span class="token punctuation">]</span><span class="token punctuation">;</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>声明<code v-pre>WETH</code>合约实例。</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre><code><span class="line"><span class="token comment">// 测试网WETH地址</span></span>
+<span class="line"><span class="token keyword">const</span> addressWETH <span class="token operator">=</span> <span class="token string">'0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6'</span></span>
+<span class="line"><span class="token comment">// 声明合约实例</span></span>
+<span class="line"><span class="token keyword">const</span> contract <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ethers<span class="token punctuation">.</span>Contract</span><span class="token punctuation">(</span>addressWETH<span class="token punctuation">,</span> abiWETH<span class="token punctuation">,</span> provider<span class="token punctuation">)</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li>
+<li>
+<p>获取过去10个区块内的<code v-pre>Transfer</code>事件，并打印出1个。我们可以看到，<code v-pre>topics</code>中有3个数据，对应事件哈希，<code v-pre>from</code>，和<code v-pre>to</code>；而<code v-pre>data</code>中只有一个数据<code v-pre>amount</code>。另外，<code v-pre>ethers</code>还会根据<code v-pre>ABI</code>自动解析事件，结果显示在<code v-pre>args</code>成员中。</p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre><code><span class="line"><span class="token comment">// 得到当前block</span></span>
+<span class="line"><span class="token keyword">const</span> block <span class="token operator">=</span> <span class="token keyword">await</span> provider<span class="token punctuation">.</span><span class="token function">getBlockNumber</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+<span class="line">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">当前区块高度: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>block<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">打印事件详情:</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token keyword">const</span> transferEvents <span class="token operator">=</span> <span class="token keyword">await</span> contract<span class="token punctuation">.</span><span class="token function">queryFilter</span><span class="token punctuation">(</span><span class="token string">'Transfer'</span><span class="token punctuation">,</span> block <span class="token operator">-</span> <span class="token number">10</span><span class="token punctuation">,</span> block<span class="token punctuation">)</span></span>
+<span class="line"><span class="token comment">// 打印第1个Transfer事件</span></span>
+<span class="line">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>transferEvents<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="@source/ethers/img/7-2.png" alt="打印事件"></p>
+</li>
+<li>
+<p>读取事件的解析结果。</p>
+<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre v-pre><code><span class="line">// 解析Transfer事件的数据（变量在args中）</span>
+<span class="line">console.log("\n2. 解析事件：")</span>
+<span class="line">const amount = ethers.formatUnits(ethers.getBigInt(transferEvents[0].args["amount"]), "ether");</span>
+<span class="line">console.log(`地址 ${transferEvents[0].args["from"]} 转账${amount} WETH 到地址 ${transferEvents[0].args["to"]}`)</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><img src="@source/ethers/img/7-3.png" alt="解析事件"></p>
+</li>
+</ol>
+<h2 id="完整代码" tabindex="-1"><a class="header-anchor" href="#完整代码"><span>完整代码</span></a></h2>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre><code><span class="line"><span class="token comment">// 检索事件的方法：</span></span>
+<span class="line"><span class="token comment">// const transferEvents = await contract.queryFilter("事件名", [起始区块高度，结束区块高度])</span></span>
+<span class="line"><span class="token comment">// 其中起始区块高度和结束区块高度为选填参数。</span></span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> ethers <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"ethers"</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token comment">// playcode免费版不能安装ethers，用这条命令，需要从网络上import包（把上面这行注释掉）</span></span>
+<span class="line"><span class="token comment">// import { ethers } from "https://cdn-cors.ethers.io/lib/ethers-5.6.9.esm.min.js";</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment">// 利用Alchemy的rpc节点连接以太坊网络</span></span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">const</span> <span class="token constant">ALCHEMY_GOERLI_URL</span> <span class="token operator">=</span> <span class="token string">'https://eth-goerli.alchemyapi.io/v2/GlaeWuylnNM3uuOo-SAwJxuwTdqHaY5l'</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token keyword">const</span> provider <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ethers<span class="token punctuation">.</span>JsonRpcProvider</span><span class="token punctuation">(</span><span class="token constant">ALCHEMY_GOERLI_URL</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment">// WETH ABI，只包含我们关心的Transfer事件</span></span>
+<span class="line"><span class="token keyword">const</span> abiWETH <span class="token operator">=</span> <span class="token punctuation">[</span></span>
+<span class="line">    <span class="token string">"event Transfer(address indexed from, address indexed to, uint amount)"</span></span>
+<span class="line"><span class="token punctuation">]</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token comment">// 测试网WETH地址</span></span>
+<span class="line"><span class="token keyword">const</span> addressWETH <span class="token operator">=</span> <span class="token string">'0xb4fbf271143f4fbf7b91a5ded31805e42b2208d6'</span></span>
+<span class="line"><span class="token comment">// 声明合约实例</span></span>
+<span class="line"><span class="token keyword">const</span> contract <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ethers<span class="token punctuation">.</span>Contract</span><span class="token punctuation">(</span>addressWETH<span class="token punctuation">,</span> abiWETH<span class="token punctuation">,</span> provider<span class="token punctuation">)</span></span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">const</span> <span class="token function-variable function">main</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span></span>
+<span class="line"></span>
+<span class="line">    <span class="token comment">// 获取过去10个区块内的Transfer事件</span></span>
+<span class="line">    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"\n1. 获取过去10个区块内的Transfer事件，并打印出1个"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token comment">// 得到当前block</span></span>
+<span class="line">    <span class="token keyword">const</span> block <span class="token operator">=</span> <span class="token keyword">await</span> provider<span class="token punctuation">.</span><span class="token function">getBlockNumber</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+<span class="line">    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">当前区块高度: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>block<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">打印事件详情:</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token keyword">const</span> transferEvents <span class="token operator">=</span> <span class="token keyword">await</span> contract<span class="token punctuation">.</span><span class="token function">queryFilter</span><span class="token punctuation">(</span><span class="token string">'Transfer'</span><span class="token punctuation">,</span> block <span class="token operator">-</span> <span class="token number">10</span><span class="token punctuation">,</span> block<span class="token punctuation">)</span></span>
+<span class="line">    <span class="token comment">// 打印第1个Transfer事件</span></span>
+<span class="line">    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>transferEvents<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span></span>
+<span class="line"></span>
+<span class="line">    <span class="token comment">// 解析Transfer事件的数据（变量在args中）</span></span>
+<span class="line">    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"\n2. 解析事件："</span><span class="token punctuation">)</span></span>
+<span class="line">    <span class="token keyword">const</span> amount <span class="token operator">=</span> ethers<span class="token punctuation">.</span><span class="token function">formatUnits</span><span class="token punctuation">(</span>ethers<span class="token punctuation">.</span><span class="token function">getBigInt</span><span class="token punctuation">(</span>transferEvents<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>args<span class="token punctuation">[</span><span class="token string">"amount"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">"ether"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">地址 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>transferEvents<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>args<span class="token punctuation">[</span><span class="token string">"from"</span><span class="token punctuation">]</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> 转账</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>amount<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> WETH 到地址 </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>transferEvents<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>args<span class="token punctuation">[</span><span class="token string">"to"</span><span class="token punctuation">]</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span></span>
+<span class="line"><span class="token punctuation">}</span></span>
+<span class="line"></span>
+<span class="line"><span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+
+

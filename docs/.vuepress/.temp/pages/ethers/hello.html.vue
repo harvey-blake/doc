@@ -1,4 +1,4 @@
-<template><div><h1 id="hellovitalik-6行代码" tabindex="-1"><a class="header-anchor" href="#hellovitalik-6行代码"><span>HelloVitalik (6行代码)</span></a></h1>
+<template><div><h1 id="_1-hellovitalik-6行代码" tabindex="-1"><a class="header-anchor" href="#_1-hellovitalik-6行代码"><span>1. HelloVitalik (6行代码)</span></a></h1>
 <p>这一讲，我们会介绍<code v-pre>ethers.js</code>库，javascript在线编辑器<code v-pre>playcode</code>，并且我们会写第一个程序<code v-pre>HelloVitalik</code>：查询Vitalik的<code v-pre>ETH</code>余额，并输出在<code v-pre>console</code>中。</p>
 <div class="hint-container tip">
 <p class="hint-container-title">提示</p>

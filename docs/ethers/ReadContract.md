@@ -1,6 +1,6 @@
 
 
-#  读取合约信息
+#  3. 读取合约信息
 
 ## `Contract`类
 
@@ -34,7 +34,7 @@ const contract = new ethers.Contract(`address`, `abi`, `signer`);
 ```javascript
 import { ethers } from "ethers";
 // 利用Infura的rpc节点连接以太坊网络
-// 准备Infura API Key, 教程：https://github.com/AmazingAng/WTFSolidity/blob/main/Topics/Tools/TOOL02_Infura/readme.md
+
 const INFURA_ID = ''
 // 连接以太坊主网
 const provider = new ethers.JsonRpcProvider(`https://mainnet.infura.io/v3/${INFURA_ID}`)
@@ -44,7 +44,7 @@ const provider = new ethers.JsonRpcProvider(`https://mainnet.infura.io/v3/${INFU
 
 创建只读Contract实例需要填入`3`个参数，分别是合约地址，合约`abi`和`provider`变量。合约地址可以在网上查到，`provider`变量上一步我们已经创建了，那么`abi`怎么填？
 
-`ABI` (Application Binary Interface) 是与以太坊智能合约交互的标准，更多内容见[WTF Solidity教程第27讲: ABI编码](https://github.com/AmazingAng/WTF-Solidity/blob/main/27_ABIEncode/readme.md)。`ethers`支持两种`abi`填法：
+`ABI` (Application Binary Interface) 是与以太坊智能合约交互的标准。`ethers`支持两种`abi`填法：
 
 - **方法1.**  直接输入合约`abi`。你可以从`remix`的编译页面中复制，在本地编译合约时生成的`artifact`文件夹的`json`文件中得到，或者从`etherscan`开源合约的代码页面得到。我们用这个方法创建`WETH`的合约实例：
 
@@ -127,7 +127,7 @@ main()
 import { ethers } from "ethers";
 
 // 利用Alchemy的rpc节点连接以太坊网络
-// 准备 alchemy API 可以参考https://github.com/AmazingAng/WTFSolidity/blob/main/Topics/Tools/TOOL04_Alchemy/readme.md
+
 const ALCHEMY_MAINNET_URL = 'https://eth-mainnet.g.alchemy.com/v2/oKmOQKbneVkxgHZfibs-iFhIlIAl6HDN';
 const provider = new ethers.JsonRpcProvider(ALCHEMY_MAINNET_URL);
 

@@ -1,10 +1,10 @@
-<template><div><h1 id="provider-提供器" tabindex="-1"><a class="header-anchor" href="#provider-提供器"><span>Provider 提供器</span></a></h1>
+<template><div><h1 id="_2-provider-提供器" tabindex="-1"><a class="header-anchor" href="#_2-provider-提供器"><span>2. Provider 提供器</span></a></h1>
 <h2 id="provider类" tabindex="-1"><a class="header-anchor" href="#provider类"><span><code v-pre>Provider</code>类</span></a></h2>
 <p><code v-pre>Provider</code>类是对以太坊网络连接的抽象，为标准以太坊节点功能提供简洁、一致的接口。在<code v-pre>ethers</code>中，<code v-pre>Provider</code>不接触用户私钥，只能读取链上信息，不能写入，这一点比<code v-pre>web3.js</code>要安全。</p>
-<p>除了<a href="https://github.com/WTFAcademy/WTF-Ethers" target="_blank" rel="noopener noreferrer">之前</a>介绍的默认提供者<code v-pre>defaultProvider</code>以外，<code v-pre>ethers</code>中最常用的是<code v-pre>jsonRpcProvider</code>，可以让用户连接到特定节点服务商的节点。</p>
+<p>除了之前介绍的默认提供者<code v-pre>defaultProvider</code>以外，<code v-pre>ethers</code>中最常用的是<code v-pre>jsonRpcProvider</code>，可以让用户连接到特定节点服务商的节点。</p>
 <h2 id="jsonrpcprovider" tabindex="-1"><a class="header-anchor" href="#jsonrpcprovider"><span><code v-pre>jsonRpcProvider</code></span></a></h2>
 <h3 id="创建节点服务商的api-key" tabindex="-1"><a class="header-anchor" href="#创建节点服务商的api-key"><span>创建节点服务商的API Key</span></a></h3>
-<p>首先，你需要去节点服务商的网站注册并创建<code v-pre>API Key</code>。在<code v-pre>WTF Solidity极简教程</code>的工具篇，我们介绍了<a href="https://github.com/AmazingAng/WTFSolidity/blob/main/Topics/Tools/TOOL02_Infura/readme.md" target="_blank" rel="noopener noreferrer">Infura</a>和<a href="https://github.com/AmazingAng/WTFSolidity/blob/main/Topics/Tools/TOOL04_Alchemy/readme.md" target="_blank" rel="noopener noreferrer">Alchemy</a>两家公司<code v-pre>API Key</code>的创建方法，大家可以参考。</p>
+<p>首先，你需要去节点服务商的网站注册并创建<code v-pre>API Key</code>。在<code v-pre>WTF Solidity极简教程</code>的工具篇，我们介绍了<code v-pre>Infura</code>和<code v-pre>Alchemy</code>两家公司<code v-pre>API Key</code>的创建方法，大家可以参考。</p>
 <p><img src="@source/ethers/img/2-1.png" alt="Infura API Key"></p>
 <p>你还可以在 <a href="https://chainlist.org/" target="_blank" rel="noopener noreferrer">Chainlist</a> 网站找到各个链的公开节点。</p>
 <h3 id="连接公开节点" tabindex="-1"><a class="header-anchor" href="#连接公开节点"><span>连接公开节点</span></a></h3>

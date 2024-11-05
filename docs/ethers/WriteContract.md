@@ -1,6 +1,6 @@
 
 
-# 合约交互
+# 5. 合约交互
 
 
 
@@ -21,7 +21,7 @@ const contract2 = contract.connect(signer)
 
 ## 合约交互
 
-我们在[第三讲](https://github.com/WTFAcademy/WTFEthers/blob/main/03_ReadContract/readme.md)介绍了读取合约信息。它不需要`gas`。这里我们介绍写入合约信息，你需要构建交易，并且支付`gas`。该交易将由整个网络上的每个节点以及矿工验证，并改变区块链状态。
+我们在[第三讲](./ReadContract.md)介绍了读取合约信息。它不需要`gas`。这里我们介绍写入合约信息，你需要构建交易，并且支付`gas`。该交易将由整个网络上的每个节点以及矿工验证，并改变区块链状态。
 
 你可以用下面的方法进行合约交互：
 
@@ -42,7 +42,7 @@ await tx.wait()
 
 ## 例子：与测试网`WETH`合约交互
 
-`WETH` (Wrapped ETH)是`ETH`的带包装版本，将以太坊原生代币用智能合约包装成了符合`ERC20`的代币。对`WETH`合约更详细的内容可以参考WTF Solidity极简合约的[第41讲 WETH](https://github.com/AmazingAng/WTFSolidity/blob/main/41_WETH/readme.md)。
+`WETH` (Wrapped ETH)是`ETH`的带包装版本，将以太坊原生代币用智能合约包装成了符合`ERC20`的代币。
 
 1. 创建`provider`，`wallet`变量。
 
@@ -134,7 +134,7 @@ import { ethers } from "ethers";
 // import { ethers } from "https://cdn-cors.ethers.io/lib/ethers-5.6.9.esm.min.js";
 
 // 利用Alchemy的rpc节点连接以太坊网络
-// 准备 alchemy API 可以参考https://github.com/AmazingAng/WTFSolidity/blob/main/Topics/Tools/TOOL04_Alchemy/readme.md
+
 const ALCHEMY_GOERLI_URL = 'https://eth-goerli.alchemyapi.io/v2/GlaeWuylnNM3uuOo-SAwJxuwTdqHaY5l';
 const provider = new ethers.JsonRpcProvider(ALCHEMY_GOERLI_URL);
 

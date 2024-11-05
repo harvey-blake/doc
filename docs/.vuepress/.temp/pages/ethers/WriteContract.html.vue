@@ -1,4 +1,4 @@
-<template><div><h1 id="合约交互" tabindex="-1"><a class="header-anchor" href="#合约交互"><span>合约交互</span></a></h1>
+<template><div><h1 id="_5-合约交互" tabindex="-1"><a class="header-anchor" href="#_5-合约交互"><span>5. 合约交互</span></a></h1>
 <h2 id="创建可写contract变量" tabindex="-1"><a class="header-anchor" href="#创建可写contract变量"><span>创建可写<code v-pre>Contract</code>变量</span></a></h2>
 <p>声明可写的<code v-pre>Contract</code>变量的规则：</p>
 <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre><code><span class="line"><span class="token keyword">const</span> contract <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ethers<span class="token punctuation">.</span>Contract</span><span class="token punctuation">(</span>address<span class="token punctuation">,</span> abi<span class="token punctuation">,</span> signer<span class="token punctuation">)</span></span>
@@ -7,8 +7,8 @@
 <p>你也可以利用下面的方法，将可读合约转换为可写合约：</p>
 <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre><code><span class="line"><span class="token keyword">const</span> contract2 <span class="token operator">=</span> contract<span class="token punctuation">.</span><span class="token function">connect</span><span class="token punctuation">(</span>signer<span class="token punctuation">)</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="合约交互-1" tabindex="-1"><a class="header-anchor" href="#合约交互-1"><span>合约交互</span></a></h2>
-<p>我们在<a href="https://github.com/WTFAcademy/WTFEthers/blob/main/03_ReadContract/readme.md" target="_blank" rel="noopener noreferrer">第三讲</a>介绍了读取合约信息。它不需要<code v-pre>gas</code>。这里我们介绍写入合约信息，你需要构建交易，并且支付<code v-pre>gas</code>。该交易将由整个网络上的每个节点以及矿工验证，并改变区块链状态。</p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="合约交互" tabindex="-1"><a class="header-anchor" href="#合约交互"><span>合约交互</span></a></h2>
+<p>我们在<RouteLink to="/ethers/ReadContract.html">第三讲</RouteLink>介绍了读取合约信息。它不需要<code v-pre>gas</code>。这里我们介绍写入合约信息，你需要构建交易，并且支付<code v-pre>gas</code>。该交易将由整个网络上的每个节点以及矿工验证，并改变区块链状态。</p>
 <p>你可以用下面的方法进行合约交互：</p>
 <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre><code><span class="line"><span class="token comment">// 发送交易</span></span>
 <span class="line"><span class="token keyword">const</span> tx <span class="token operator">=</span> <span class="token keyword">await</span> contract<span class="token punctuation">.</span><span class="token constant">METHOD_NAME</span><span class="token punctuation">(</span>args <span class="token punctuation">[</span><span class="token punctuation">,</span> overrides<span class="token punctuation">]</span><span class="token punctuation">)</span></span>
@@ -24,7 +24,7 @@
 </ul>
 <p><strong>注意：</strong> 此方法不能获取合约运行的返回值，如有需要，要使用<code v-pre>Solidity</code>事件记录，然后利用交易收据去查询。</p>
 <h2 id="例子-与测试网weth合约交互" tabindex="-1"><a class="header-anchor" href="#例子-与测试网weth合约交互"><span>例子：与测试网<code v-pre>WETH</code>合约交互</span></a></h2>
-<p><code v-pre>WETH</code> (Wrapped ETH)是<code v-pre>ETH</code>的带包装版本，将以太坊原生代币用智能合约包装成了符合<code v-pre>ERC20</code>的代币。对<code v-pre>WETH</code>合约更详细的内容可以参考WTF Solidity极简合约的<a href="https://github.com/AmazingAng/WTFSolidity/blob/main/41_WETH/readme.md" target="_blank" rel="noopener noreferrer">第41讲 WETH</a>。</p>
+<p><code v-pre>WETH</code> (Wrapped ETH)是<code v-pre>ETH</code>的带包装版本，将以太坊原生代币用智能合约包装成了符合<code v-pre>ERC20</code>的代币。</p>
 <ol>
 <li>
 <p>创建<code v-pre>provider</code>，<code v-pre>wallet</code>变量。</p>
@@ -112,7 +112,7 @@
 <span class="line"><span class="token comment">// import { ethers } from "https://cdn-cors.ethers.io/lib/ethers-5.6.9.esm.min.js";</span></span>
 <span class="line"></span>
 <span class="line"><span class="token comment">// 利用Alchemy的rpc节点连接以太坊网络</span></span>
-<span class="line"><span class="token comment">// 准备 alchemy API 可以参考https://github.com/AmazingAng/WTFSolidity/blob/main/Topics/Tools/TOOL04_Alchemy/readme.md</span></span>
+<span class="line"></span>
 <span class="line"><span class="token keyword">const</span> <span class="token constant">ALCHEMY_GOERLI_URL</span> <span class="token operator">=</span> <span class="token string">'https://eth-goerli.alchemyapi.io/v2/GlaeWuylnNM3uuOo-SAwJxuwTdqHaY5l'</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token keyword">const</span> provider <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ethers<span class="token punctuation">.</span>JsonRpcProvider</span><span class="token punctuation">(</span><span class="token constant">ALCHEMY_GOERLI_URL</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
 <span class="line"></span>

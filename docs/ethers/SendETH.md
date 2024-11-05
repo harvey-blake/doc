@@ -1,6 +1,6 @@
 
 
-# 发送ETH
+# 4. 发送ETH
 
 ## `Signer`签名者类
 
@@ -75,7 +75,7 @@ const wallet3 = ethers.Wallet.fromPhrase(mnemonic.phrase)
 import { ethers } from "ethers";
 
 // 利用Alchemy的rpc节点连接以太坊测试网络
-// 准备 alchemy API 可以参考https://github.com/AmazingAng/WTFSolidity/blob/main/Topics/Tools/TOOL04_Alchemy/readme.md
+
 const ALCHEMY_GOERLI_URL = 'https://eth-goerli.alchemyapi.io/v2/GlaeWuylnNM3uuOo-SAwJxuwTdqHaY5l';
 const provider = new ethers.JsonRpcProvider(ALCHEMY_GOERLI_URL);
 ```
@@ -200,7 +200,7 @@ console.log(`钱包1助记词: ${wallet1.mnemonic.phrase}`)
 import { ethers } from "ethers";
 
 // 利用Alchemy的rpc节点连接以太坊测试网络
-// 准备 alchemy API 可以参考https://github.com/AmazingAng/WTFSolidity/blob/main/Topics/Tools/TOOL04_Alchemy/readme.md
+
 const ALCHEMY_GOERLI_URL = 'https://eth-goerli.alchemyapi.io/v2/GlaeWuylnNM3uuOo-SAwJxuwTdqHaY5l';
 const provider = new ethers.JsonRpcProvider(ALCHEMY_GOERLI_URL);
 
