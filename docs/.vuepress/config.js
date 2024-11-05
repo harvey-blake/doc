@@ -59,14 +59,16 @@ export default defineUserConfig({
   description: '专注于核心技术和工具的使用方法、最佳实践及常见问题解决方案，为您的开发提供帮助！',
 
   plugins: [
+
     searchPlugin({
-      // 可选的配置项
+
       locales: {
         '/': {
           placeholder: '搜索',
         },
       },
       // 其他配置选项
+
       maxSuggestions: 10, // 最大显示的搜索建议条目数量
     }),
   ],
@@ -75,7 +77,9 @@ export default defineUserConfig({
   // 设置主题配置
   theme: defaultTheme({
     logo: './images/logo.png',
-
+    colorMode: 'light',
+    externalLinkIcon: false,
+    colorModeSwitch: false,
     // 配置导航栏
     navbar: [
       { text: '首页', link: '/' },
@@ -111,7 +115,8 @@ export default defineUserConfig({
 
     },
 
-    // lastUpdated: false,
+
+
     editLink: true,
 
     lastUpdatedText: '上次更新',
@@ -121,6 +126,7 @@ export default defineUserConfig({
     docsDir: 'docs',
     editLinkText: '编辑此页',
     contributors: false,
+
     // sidebarDepth: 0,
   }),
 

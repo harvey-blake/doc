@@ -44,7 +44,6 @@ export const routes = Object.fromEntries([
   ["/Solidity/Overloading.html", { loader: () => import(/* webpackChunkName: "Solidity_Overloading.html" */"E:/www/doc/docs/.vuepress/.temp/pages/Solidity/Overloading.html.js"), meta: {"title":"16. 函数重载"} }],
   ["/Solidity/Return.html", { loader: () => import(/* webpackChunkName: "Solidity_Return.html" */"E:/www/doc/docs/.vuepress/.temp/pages/Solidity/Return.html.js"), meta: {"title":"4. 函数输出"} }],
   ["/Solidity/ValueTypes.html", { loader: () => import(/* webpackChunkName: "Solidity_ValueTypes.html" */"E:/www/doc/docs/.vuepress/.temp/pages/Solidity/ValueTypes.html.js"), meta: {"title":"2. 值类型"} }],
-  ["/VuePress/VuePress1.html", { loader: () => import(/* webpackChunkName: "VuePress_VuePress1.html" */"E:/www/doc/docs/.vuepress/.temp/pages/VuePress/VuePress1.html.js"), meta: {"title":"Markdown基本语法"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"E:/www/doc/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
 ]);
 
