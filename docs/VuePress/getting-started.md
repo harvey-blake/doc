@@ -243,7 +243,7 @@ npm run docs:build
 
 :::
 
-在 `docs/.vuepress/dist` 目录中可以找到构建生成的静态文件。你可以查看 [部署](./deployment.md) 来了解如何部署你的网站。
+在 `docs/.vuepress/dist` 目录中可以找到构建生成的静态文件。
 
 ## 进一步了解 VuePress
 

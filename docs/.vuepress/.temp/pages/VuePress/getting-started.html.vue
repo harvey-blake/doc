@@ -188,7 +188,7 @@
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></template>
 </CodeTabs>
-<p>在 <code v-pre>docs/.vuepress/dist</code> 目录中可以找到构建生成的静态文件。你可以查看 <RouteLink to="/VuePress/deployment.html">部署</RouteLink> 来了解如何部署你的网站。</p>
+<p>在 <code v-pre>docs/.vuepress/dist</code> 目录中可以找到构建生成的静态文件。</p>
 <h2 id="进一步了解-vuepress" tabindex="-1"><a class="header-anchor" href="#进一步了解-vuepress"><span>进一步了解 VuePress</span></a></h2>
 <p>现在，你应该已经有了一个简单可用的 VuePress 网站。但你可能仍需要阅读后续的指南来更加了解 VuePress 。</p>
 <p>下一步，前往 <RouteLink to="/VuePress/configuration.html">配置</RouteLink> 了解更多配置文件相关的内容。</p>
