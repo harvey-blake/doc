@@ -17,7 +17,7 @@
 </ol>
 <p>本教程中，我们主要介绍前两个产品。</p>
 <h2 id="flashbots-rpc" tabindex="-1"><a class="header-anchor" href="#flashbots-rpc"><span>Flashbots RPC</span></a></h2>
-<p>Flashbots RPC 是一款面向以太坊普通用户的免费产品，你只需要在加密的钱包中将 RPC（网络节点）设置为Flashbots RPC，就可以将交易发送到Flashbots的私有交易缓存池（mempool）而非公开的，从而免受抢先交易/三明治攻击的损害。如果你不了解mempool或抢先交易，可以阅读之前的 <RouteLink to="/ethers/Mempool.html">mempool</RouteLink> 和 <RouteLink to="/ethers/Frontrun.html">抢先交易</RouteLink> 教程</p>
+<p>Flashbots RPC 是一款面向以太坊普通用户的免费产品，你只需要在加密的钱包中将 RPC（网络节点）设置为Flashbots RPC，就可以将交易发送到Flashbots的私有交易缓存池（mempool）而非公开的，从而免受抢先交易/三明治攻击的损害。如果你不了解mempool或抢先交易，可以阅读之前的 <RouteLink to="/ethers/Mempool.html">mempool</RouteLink> 和 <RouteLink to="/ethers/frontrun.html">抢先交易</RouteLink> 教程</p>
 <p>下面我们演示一下如何用 Metamask 钱包连接 Flashbots RPC。</p>
 <ol>
 <li>点击 Metamask 顶部的网络按钮（默认显示 <code v-pre>Ethereum Mainnet</code>），然后点击底部的 <code v-pre>Add network</code> 按钮添加网络节点（新版 Metamask 还需要在下一个页面点击 <code v-pre>Add a network manually</code> 按钮）。</li>

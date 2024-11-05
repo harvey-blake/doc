@@ -123,6 +123,12 @@
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><details class="hint-container details"><summary>更多信息</summary>
 <p>这是可以折叠的内容。</p>
 </details>
-</div></template>
+<h2 id="标题的代码块" tabindex="-1"><a class="header-anchor" href="#标题的代码块"><span>标题的代码块</span></a></h2>
+<div class="language-markdown line-numbers-mode" data-highlighter="prismjs" data-ext="md" data-title="md"><pre v-pre><code><span class="line">```text  title="Inheritance.text"</span>
+<span class="line">带标题的代码块</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="Inheritance.text"><pre v-pre><code><span class="line">带标题的代码块</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></div></template>
 
 

@@ -1179,6 +1179,893 @@ export const SEARCH_INDEX = [
     "extraFields": []
   },
   {
+    "title": "6. 引用类型, array, struct",
+    "headers": [
+      {
+        "level": 2,
+        "title": "数组 array",
+        "slug": "数组-array",
+        "link": "#数组-array",
+        "children": [
+          {
+            "level": 3,
+            "title": "创建数组的规则",
+            "slug": "创建数组的规则",
+            "link": "#创建数组的规则",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "数组成员",
+            "slug": "数组成员",
+            "link": "#数组成员",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "结构体 struct",
+        "slug": "结构体-struct",
+        "link": "#结构体-struct",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "完整合约",
+        "slug": "完整合约",
+        "link": "#完整合约",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/ArrayAndStruct.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "9. 常数 constant和immutable",
+    "headers": [
+      {
+        "level": 2,
+        "title": "constant和immutable",
+        "slug": "constant和immutable",
+        "link": "#constant和immutable",
+        "children": [
+          {
+            "level": 3,
+            "title": "constant",
+            "slug": "constant",
+            "link": "#constant",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "immutable",
+            "slug": "immutable",
+            "link": "#immutable",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "在remix上验证",
+        "slug": "在remix上验证",
+        "link": "#在remix上验证",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "完整合约",
+        "slug": "完整合约",
+        "link": "#完整合约",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/Constant.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "5. 变量数据存储和作用域",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Solidity中的引用类型",
+        "slug": "solidity中的引用类型",
+        "link": "#solidity中的引用类型",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "数据位置",
+        "slug": "数据位置",
+        "link": "#数据位置",
+        "children": [
+          {
+            "level": 3,
+            "title": "数据位置和赋值规则",
+            "slug": "数据位置和赋值规则",
+            "link": "#数据位置和赋值规则",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "变量的作用域",
+        "slug": "变量的作用域",
+        "link": "#变量的作用域",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 状态变量",
+            "slug": "_1-状态变量",
+            "link": "#_1-状态变量",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. 局部变量",
+            "slug": "_2-局部变量",
+            "link": "#_2-局部变量",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. 全局变量",
+            "slug": "_3-全局变量",
+            "link": "#_3-全局变量",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4. 全局变量-以太单位与时间单位",
+            "slug": "_4-全局变量-以太单位与时间单位",
+            "link": "#_4-全局变量-以太单位与时间单位",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "完整合约",
+        "slug": "完整合约",
+        "link": "#完整合约",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/DataStorage.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "15. 异常",
+    "headers": [
+      {
+        "level": 2,
+        "title": "异常",
+        "slug": "异常",
+        "link": "#异常",
+        "children": [
+          {
+            "level": 3,
+            "title": "Error",
+            "slug": "error",
+            "link": "#error",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Require",
+            "slug": "require",
+            "link": "#require",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "Assert",
+            "slug": "assert",
+            "link": "#assert",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "在remix上验证",
+        "slug": "在remix上验证",
+        "link": "#在remix上验证",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "三种方法的gas比较",
+        "slug": "三种方法的gas比较",
+        "link": "#三种方法的gas比较",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "完整合约",
+        "slug": "完整合约",
+        "link": "#完整合约",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/Error.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "12. 事件",
+    "headers": [
+      {
+        "level": 2,
+        "title": "事件",
+        "slug": "事件",
+        "link": "#事件",
+        "children": [
+          {
+            "level": 3,
+            "title": "声明事件",
+            "slug": "声明事件",
+            "link": "#声明事件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "释放事件",
+            "slug": "释放事件",
+            "link": "#释放事件",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "EVM日志 Log",
+        "slug": "evm日志-log",
+        "link": "#evm日志-log",
+        "children": [
+          {
+            "level": 3,
+            "title": "主题 topics",
+            "slug": "主题-topics",
+            "link": "#主题-topics",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "数据 data",
+            "slug": "数据-data",
+            "link": "#数据-data",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Remix演示",
+        "slug": "remix演示",
+        "link": "#remix演示",
+        "children": [
+          {
+            "level": 3,
+            "title": "在Etherscan上查询事件",
+            "slug": "在etherscan上查询事件",
+            "link": "#在etherscan上查询事件",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "完整合约",
+        "slug": "完整合约",
+        "link": "#完整合约",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/Event.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "3. 函数",
+    "headers": [
+      {
+        "level": 2,
+        "title": "函数",
+        "slug": "函数",
+        "link": "#函数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "到底什么是 Pure 和View？",
+        "slug": "到底什么是-pure-和view",
+        "link": "#到底什么是-pure-和view",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "代码",
+        "slug": "代码",
+        "link": "#代码",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. pure 和 view",
+            "slug": "_1-pure-和-view",
+            "link": "#_1-pure-和-view",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. internal v.s. external",
+            "slug": "_2-internal-v-s-external",
+            "link": "#_2-internal-v-s-external",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. payable",
+            "slug": "_3-payable",
+            "link": "#_3-payable",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "完整合约",
+        "slug": "完整合约",
+        "link": "#完整合约",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/Function.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "1. Hello Web3 (三行代码)",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Solidity 简介",
+        "slug": "solidity-简介",
+        "link": "#solidity-简介",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "开发工具：Remix",
+        "slug": "开发工具-remix",
+        "link": "#开发工具-remix",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "第一个 Solidity 程序",
+        "slug": "第一个-solidity-程序",
+        "link": "#第一个-solidity-程序",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "编译并部署代码",
+        "slug": "编译并部署代码",
+        "link": "#编译并部署代码",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": [
+          {
+            "level": 3,
+            "title": "中文 Solidity 资料推荐",
+            "slug": "中文-solidity-资料推荐",
+            "link": "#中文-solidity-资料推荐",
+            "children": []
+          }
+        ]
+      }
+    ],
+    "path": "/Solidity/HelloWeb3.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "13. 继承",
+    "headers": [
+      {
+        "level": 2,
+        "title": "继承",
+        "slug": "继承",
+        "link": "#继承",
+        "children": [
+          {
+            "level": 3,
+            "title": "规则",
+            "slug": "规则",
+            "link": "#规则",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "简单继承",
+            "slug": "简单继承",
+            "link": "#简单继承",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "多重继承",
+            "slug": "多重继承",
+            "link": "#多重继承",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "修饰器的继承",
+            "slug": "修饰器的继承",
+            "link": "#修饰器的继承",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "构造函数的继承",
+            "slug": "构造函数的继承",
+            "link": "#构造函数的继承",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "调用父合约的函数",
+            "slug": "调用父合约的函数",
+            "link": "#调用父合约的函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "钻石继承",
+            "slug": "钻石继承",
+            "link": "#钻石继承",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "在Remix上验证",
+        "slug": "在remix上验证",
+        "link": "#在remix上验证",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "合约代码",
+        "slug": "合约代码",
+        "link": "#合约代码",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/Inheritance.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "8. 变量初始值",
+    "headers": [
+      {
+        "level": 2,
+        "title": "变量初始值",
+        "slug": "变量初始值",
+        "link": "#变量初始值",
+        "children": [
+          {
+            "level": 3,
+            "title": "值类型初始值",
+            "slug": "值类型初始值",
+            "link": "#值类型初始值",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "引用类型初始值",
+            "slug": "引用类型初始值",
+            "link": "#引用类型初始值",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "delete操作符",
+            "slug": "delete操作符",
+            "link": "#delete操作符",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "在remix上验证",
+        "slug": "在remix上验证",
+        "link": "#在remix上验证",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "完整代码",
+        "slug": "完整代码",
+        "link": "#完整代码",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/InitialValue.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "10. 控制流，用Solidity实现插入排序",
+    "headers": [
+      {
+        "level": 2,
+        "title": "控制流",
+        "slug": "控制流",
+        "link": "#控制流",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "用Solidity实现插入排序",
+        "slug": "用solidity实现插入排序",
+        "link": "#用solidity实现插入排序",
+        "children": [
+          {
+            "level": 3,
+            "title": "插入排序",
+            "slug": "插入排序",
+            "link": "#插入排序",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "python代码",
+            "slug": "python代码",
+            "link": "#python代码",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "改写成Solidity后有BUG",
+            "slug": "改写成solidity后有bug",
+            "link": "#改写成solidity后有bug",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "正确的Solidity插入排序",
+            "slug": "正确的solidity插入排序",
+            "link": "#正确的solidity插入排序",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "完整合约",
+        "slug": "完整合约",
+        "link": "#完整合约",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/InsertionSort.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "14. 抽象合约和接口",
+    "headers": [
+      {
+        "level": 2,
+        "title": "抽象合约",
+        "slug": "抽象合约",
+        "link": "#抽象合约",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "接口",
+        "slug": "接口",
+        "link": "#接口",
+        "children": [
+          {
+            "level": 3,
+            "title": "IERC721事件",
+            "slug": "ierc721事件",
+            "link": "#ierc721事件",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "IERC721函数",
+            "slug": "ierc721函数",
+            "link": "#ierc721函数",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "什么时候使用接口？",
+            "slug": "什么时候使用接口",
+            "link": "#什么时候使用接口",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "在Remix上验证",
+        "slug": "在remix上验证",
+        "link": "#在remix上验证",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "完整合约",
+        "slug": "完整合约",
+        "link": "#完整合约",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/Interface.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "7. 映射类型 mapping",
+    "headers": [
+      {
+        "level": 2,
+        "title": "映射Mapping",
+        "slug": "映射mapping",
+        "link": "#映射mapping",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "映射的规则",
+        "slug": "映射的规则",
+        "link": "#映射的规则",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "映射的原理",
+        "slug": "映射的原理",
+        "link": "#映射的原理",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "在Remix上验证 (以 Mapping.sol为例)",
+        "slug": "在remix上验证-以-mapping-sol为例",
+        "link": "#在remix上验证-以-mapping-sol为例",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "完整合于",
+        "slug": "完整合于",
+        "link": "#完整合于",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/Mapping.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "11. 构造函数和修饰器",
+    "headers": [
+      {
+        "level": 2,
+        "title": "构造函数",
+        "slug": "构造函数",
+        "link": "#构造函数",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "修饰器",
+        "slug": "修饰器",
+        "link": "#修饰器",
+        "children": [
+          {
+            "level": 3,
+            "title": "OpenZeppelin的Ownable标准实现",
+            "slug": "openzeppelin的ownable标准实现",
+            "link": "#openzeppelin的ownable标准实现",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "Remix 演示示例",
+        "slug": "remix-演示示例",
+        "link": "#remix-演示示例",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "完整合约",
+        "slug": "完整合约",
+        "link": "#完整合约",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/Modifier.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "16. 函数重载",
+    "headers": [
+      {
+        "level": 2,
+        "title": "重载",
+        "slug": "重载",
+        "link": "#重载",
+        "children": [
+          {
+            "level": 3,
+            "title": "函数重载",
+            "slug": "函数重载",
+            "link": "#函数重载",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "实参匹配（Argument Matching）",
+            "slug": "实参匹配-argument-matching",
+            "link": "#实参匹配-argument-matching",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "完整合约",
+        "slug": "完整合约",
+        "link": "#完整合约",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/Overloading.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "4. 函数输出",
+    "headers": [
+      {
+        "level": 2,
+        "title": "返回值：return 和 returns",
+        "slug": "返回值-return-和-returns",
+        "link": "#返回值-return-和-returns",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "命名式返回",
+        "slug": "命名式返回",
+        "link": "#命名式返回",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "解构式赋值",
+        "slug": "解构式赋值",
+        "link": "#解构式赋值",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "在 Remix 上运行",
+        "slug": "在-remix-上运行",
+        "link": "#在-remix-上运行",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "总结",
+        "slug": "总结",
+        "link": "#总结",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/Return.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
+    "title": "2. 值类型",
+    "headers": [
+      {
+        "level": 2,
+        "title": "Solidity中的变量类型",
+        "slug": "solidity中的变量类型",
+        "link": "#solidity中的变量类型",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "值类型",
+        "slug": "值类型",
+        "link": "#值类型",
+        "children": [
+          {
+            "level": 3,
+            "title": "1. 布尔型",
+            "slug": "_1-布尔型",
+            "link": "#_1-布尔型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "2. 整型",
+            "slug": "_2-整型",
+            "link": "#_2-整型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "3. 地址类型",
+            "slug": "_3-地址类型",
+            "link": "#_3-地址类型",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "4. 定长字节数组",
+            "slug": "_4-定长字节数组",
+            "link": "#_4-定长字节数组",
+            "children": []
+          },
+          {
+            "level": 3,
+            "title": "5. 枚举 enum",
+            "slug": "_5-枚举-enum",
+            "link": "#_5-枚举-enum",
+            "children": []
+          }
+        ]
+      },
+      {
+        "level": 2,
+        "title": "在 Remix 上运行",
+        "slug": "在-remix-上运行",
+        "link": "#在-remix-上运行",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "完整合约",
+        "slug": "完整合约",
+        "link": "#完整合约",
+        "children": []
+      }
+    ],
+    "path": "/Solidity/ValueTypes.html",
+    "pathLocale": "/",
+    "extraFields": []
+  },
+  {
     "title": "Markdown基本语法",
     "headers": [
       {
@@ -1263,6 +2150,13 @@ export const SEARCH_INDEX = [
         "title": "备注",
         "slug": "备注",
         "link": "#备注",
+        "children": []
+      },
+      {
+        "level": 2,
+        "title": "标题的代码块",
+        "slug": "标题的代码块",
+        "link": "#标题的代码块",
         "children": []
       }
     ],

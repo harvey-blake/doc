@@ -136,7 +136,17 @@ console.log("这是一个代码示例");
 这是可以折叠的内容。
 :::
 
+## 标题的代码块
 
+```md
+```text  title="Inheritance.text"
+带标题的代码块
+```
+
+
+```text  title="Inheritance.text"
+带标题的代码块
+```
 
 
 

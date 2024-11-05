@@ -3,9 +3,6 @@ import { defineUserConfig } from 'vuepress/cli';
 import { webpackBundler } from '@vuepress/bundler-webpack';
 import { searchPlugin } from '@vuepress/plugin-search'
 
-const VuePress = [
-  '/VuePress/VuePress1',
-]
 
 const ethers = [
   '/ethers/hello',
@@ -36,6 +33,25 @@ const ethers = [
   '/ethers/eip712'
 ]
 
+const solidity = [
+  '/Solidity/HelloWeb3',
+  '/Solidity/ValueTypes',
+  '/Solidity/Function',
+  '/Solidity/Return',
+  '/Solidity/DataStorage',
+  '/Solidity/ArrayAndStruct',
+  '/Solidity/Mapping',
+  '/Solidity/InitialValue',
+  '/Solidity/Constant',
+  '/Solidity/InsertionSort',
+  '/Solidity/Modifier',
+  '/Solidity/Event',
+  '/Solidity/Inheritance',
+  '/Solidity/Interface',
+  '/Solidity/Error',
+  '/Solidity/Overloading',
+]
+
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -64,13 +80,14 @@ export default defineUserConfig({
     navbar: [
       { text: '首页', link: '/' },
       {
-        text: 'Ethers v6',
+        text: 'Ethers v6教程',
         children: ethers,
       },
       {
-        text: 'Markdown',
-        children: VuePress,
+        text: 'Solidity 入门',
+        children: solidity,
       },
+
 
     ],
     sidebar: {
@@ -83,11 +100,11 @@ export default defineUserConfig({
           children: ethers,
         },
       ],
-      '/VuePress/': [
+      '/Solidity/': [
         {
-          text: 'Markdown基本语法',
+          text: 'Solidity 入门教程',
           collapsible: false,
-          children: VuePress,
+          children: solidity,
         },
       ],
 
@@ -99,10 +116,10 @@ export default defineUserConfig({
 
     lastUpdatedText: '上次更新',
 
-    repo: 'harvey-blake/doc', // 替换为您的 GitHub 仓库
-    editLinks: true, // 启用编辑链接
-    docsDir: 'docs',
-    editLinkText: '编辑此页',
+    // repo: 'harvey-blake/doc', // 替换为您的 GitHub 仓库
+    // editLinks: true, // 启用编辑链接
+    // docsDir: 'docs',
+    // editLinkText: '编辑此页',
     contributors: false,
     // sidebarDepth: 0,
   }),
