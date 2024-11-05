@@ -8,7 +8,8 @@
     "docs:build": "vuepress build docs",
     "docs:clean-dev": "vuepress dev docs --clean-cache",
     "start": "vuepress dev docs",
-    "docs:update-package": "npx vp-update"
+    "docs:update-package": "npx vp-update",
+     "push": "git add . && git commit -m \"Upload changes\" && git push origin main"
   },
   "devDependencies": {
     "@vuepress/bundler-webpack": "^2.0.0-rc.7",

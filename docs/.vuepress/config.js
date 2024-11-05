@@ -24,7 +24,7 @@ export default defineUserConfig({
           '/VuePress/VuePress1',
         ],
       },
-      { text: 'GitHub', link: 'https://github.com/your-repo' }, // 添加 GitHub 链接
+      { text: 'GitHub', link: 'https://github.com/harvey-blake' }, // 添加 GitHub 链接
     ],
     sidebar: [
       {
