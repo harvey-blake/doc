@@ -40,8 +40,13 @@ export default defineUserConfig({
 
     // lastUpdated: false,
     editLink: true,
-    editLinkText: '在 GitHub 上编辑此页',
+
     lastUpdatedText: '上次更新',
+
+    repo: 'harvey-blake/doc', // 替换为您的 GitHub 仓库
+    editLinks: true, // 启用编辑链接
+    editLinkText: '在 GitHub 上编辑此页',
+
 
     lastUpdated: '上次更新',
     contributors: false,
