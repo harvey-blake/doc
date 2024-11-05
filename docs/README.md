@@ -3,12 +3,12 @@ home: true
 title: Home
 heroImage: https://vuejs.press/images/hero.png
 actions:
-  - text: Get Started
-    link: /VuePress.html
-    type: primary
-
   - text: 联系作者
     link: https://t.me/eduvue
+    type: primary
+
+  - text: Get Started
+    link: /VuePress.html
     type: primary
 
 features:

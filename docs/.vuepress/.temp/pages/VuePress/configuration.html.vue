@@ -71,7 +71,7 @@
 <span class="line"><span class="token punctuation">}</span><span class="token punctuation">)</span></span>
 <span class="line"></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><div class="hint-container tip">
-<p class="hint-container-title">Tips</p>
+<p class="hint-container-title">提示</p>
 <p>和配置文件不同，客户端配置文件不能通过命令行接口的选项来指定。</p>
 </div>
 </div></template>

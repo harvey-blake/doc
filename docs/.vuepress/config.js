@@ -3,8 +3,7 @@ import { defineUserConfig } from 'vuepress/cli';
 import { webpackBundler } from '@vuepress/bundler-webpack';
 
 export default defineUserConfig({
-  lang: 'en-US',
-
+  lang: 'zh-CN',
   title: 'Harvey Blake',
   description: 'A documentation site for Harvey Blake.',
 
@@ -14,7 +13,7 @@ export default defineUserConfig({
 
     // 配置导航栏
     navbar: [
-      { text: 'Home', link: '/' },
+      { text: '首页', link: '/' },
       {
         text: 'VuePress',
         children: [
@@ -39,7 +38,10 @@ export default defineUserConfig({
       },
     ],
 
+    // lastUpdated: false,
+    // contributors: false,
   }),
+
 
   // 使用 webpack 打包器
   bundler: webpackBundler(),
