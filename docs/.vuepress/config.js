@@ -39,7 +39,12 @@ export default defineUserConfig({
     ],
 
     // lastUpdated: false,
-    // contributors: false,
+    editLink: true,
+    editLinkText: '在 GitHub 上编辑此页',
+    lastUpdatedText: '上次更新',
+
+    lastUpdated: '上次更新',
+    contributors: false,
   }),
 
 
