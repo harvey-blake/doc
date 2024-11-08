@@ -1,4 +1,4 @@
-<template><div><h1 id="_2-provider-提供器" tabindex="-1"><a class="header-anchor" href="#_2-provider-提供器"><span>2. Provider 提供器</span></a></h1>
+<template><div><Layout/><h1 id="_2-provider-提供器" tabindex="-1"><a class="header-anchor" href="#_2-provider-提供器"><span>2. Provider 提供器</span></a></h1>
 <h2 id="provider类" tabindex="-1"><a class="header-anchor" href="#provider类"><span><code v-pre>Provider</code>类</span></a></h2>
 <p><code v-pre>Provider</code>类是对以太坊网络连接的抽象，为标准以太坊节点功能提供简洁、一致的接口。在<code v-pre>ethers</code>中，<code v-pre>Provider</code>不接触用户私钥，只能读取链上信息，不能写入，这一点比<code v-pre>web3.js</code>要安全。</p>
 <p>除了之前介绍的默认提供者<code v-pre>defaultProvider</code>以外，<code v-pre>ethers</code>中最常用的是<code v-pre>jsonRpcProvider</code>，可以让用户连接到特定节点服务商的节点。</p>

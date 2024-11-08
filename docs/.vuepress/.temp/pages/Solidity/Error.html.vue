@@ -1,4 +1,4 @@
-<template><div><h1 id="_15-异常" tabindex="-1"><a class="header-anchor" href="#_15-异常"><span>15. 异常</span></a></h1>
+<template><div><Layout/><h1 id="_15-异常" tabindex="-1"><a class="header-anchor" href="#_15-异常"><span>15. 异常</span></a></h1>
 <p>我们介绍<code v-pre>Solidity</code>三种抛出异常的方法：<code v-pre>error</code>，<code v-pre>require</code>和<code v-pre>assert</code>，并比较三种方法的<code v-pre>gas</code>消耗。</p>
 <h2 id="异常" tabindex="-1"><a class="header-anchor" href="#异常"><span>异常</span></a></h2>
 <p>写智能合约经常会出<code v-pre>bug</code>，<code v-pre>Solidity</code>中的异常命令帮助我们<code v-pre>debug</code>。</p>

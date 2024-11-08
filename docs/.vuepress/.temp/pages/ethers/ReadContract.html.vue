@@ -1,4 +1,4 @@
-<template><div><h1 id="_3-读取合约信息" tabindex="-1"><a class="header-anchor" href="#_3-读取合约信息"><span>3. 读取合约信息</span></a></h1>
+<template><div><Layout/><h1 id="_3-读取合约信息" tabindex="-1"><a class="header-anchor" href="#_3-读取合约信息"><span>3. 读取合约信息</span></a></h1>
 <h2 id="contract类" tabindex="-1"><a class="header-anchor" href="#contract类"><span><code v-pre>Contract</code>类</span></a></h2>
 <p>在<code v-pre>ethers</code>中，<code v-pre>Contract</code>类是部署在以太坊网络上的合约（<code v-pre>EVM</code>字节码）的抽象。通过它，开发者可以非常容易的对合约进行读取<code v-pre>call</code>和交易<code v-pre>transaction</code>，并可以获得交易的结果和事件。以太坊强大的地方正是合约，所以对于合约的操作要熟练掌握。</p>
 <h2 id="创建contract变量" tabindex="-1"><a class="header-anchor" href="#创建contract变量"><span>创建<code v-pre>Contract</code>变量</span></a></h2>

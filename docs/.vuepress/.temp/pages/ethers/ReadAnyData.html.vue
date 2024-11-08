@@ -1,4 +1,4 @@
-<template><div><h1 id="_22-读取任意数据" tabindex="-1"><a class="header-anchor" href="#_22-读取任意数据"><span>22. 读取任意数据</span></a></h1>
+<template><div><Layout/><h1 id="_22-读取任意数据" tabindex="-1"><a class="header-anchor" href="#_22-读取任意数据"><span>22. 读取任意数据</span></a></h1>
 <p>以太坊所有数据都是公开的，因此 <code v-pre>private</code> 变量并不私密。这一讲，我们将介绍如何读取智能合约的任意数据。</p>
 <h2 id="智能合约存储布局" tabindex="-1"><a class="header-anchor" href="#智能合约存储布局"><span>智能合约存储布局</span></a></h2>
 <p>以太坊智能合约的存储是一个 <code v-pre>uint256 -&gt; uint256</code> 的映射。<code v-pre>uint256</code> 大小为 <code v-pre>32 bytes</code>，这个固定大小的存储空间被称为 <code v-pre>slot</code> （插槽）。智能合约的数据就被存在一个个的 <code v-pre>slot</code> 中，从 <code v-pre>slot 0</code> 开始依次存储。每个基本数据类型占一个<code v-pre>slot</code>，例如<code v-pre>uint</code>，<code v-pre>address</code>，等等；而数组和映射这类复杂结构则会更复杂，详见<a href="https://docs.soliditylang.org/en/v0.8.17/internals/layout_in_storage.html?highlight=Layout%20of%20State%20Variables%20in%20Storage" target="_blank" rel="noopener noreferrer">网址</a>。</p>

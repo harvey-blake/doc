@@ -1,4 +1,4 @@
-<template><div><h1 id="_8-变量初始值" tabindex="-1"><a class="header-anchor" href="#_8-变量初始值"><span>8. 变量初始值</span></a></h1>
+<template><div><Layout/><h1 id="_8-变量初始值" tabindex="-1"><a class="header-anchor" href="#_8-变量初始值"><span>8. 变量初始值</span></a></h1>
 <hr>
 <h2 id="变量初始值" tabindex="-1"><a class="header-anchor" href="#变量初始值"><span>变量初始值</span></a></h2>
 <p>在<code v-pre>Solidity</code>中，声明但没赋值的变量都有它的初始值或默认值。这一讲，我们将介绍常用变量的初始值。</p>

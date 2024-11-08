@@ -1,4 +1,4 @@
-<template><div><h1 id="_15-批量转账" tabindex="-1"><a class="header-anchor" href="#_15-批量转账"><span>15. 批量转账</span></a></h1>
+<template><div><Layout/><h1 id="_15-批量转账" tabindex="-1"><a class="header-anchor" href="#_15-批量转账"><span>15. 批量转账</span></a></h1>
 <p>这一讲，我们将介绍用<code v-pre>ethers.js</code>进行批量转账。</p>
 <h2 id="airdrop合约" tabindex="-1"><a class="header-anchor" href="#airdrop合约"><span>Airdrop合约</span></a></h2>
 <p>这里简单介绍下<code v-pre>Airdrop</code>合约，细节可以去Solidity教程中看。我们会用到<code v-pre>2</code>个函数：</p>

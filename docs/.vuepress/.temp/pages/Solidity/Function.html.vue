@@ -1,4 +1,4 @@
-<template><div><h1 id="_3-函数" tabindex="-1"><a class="header-anchor" href="#_3-函数"><span>3. 函数</span></a></h1>
+<template><div><Layout/><h1 id="_3-函数" tabindex="-1"><a class="header-anchor" href="#_3-函数"><span>3. 函数</span></a></h1>
 <h2 id="函数" tabindex="-1"><a class="header-anchor" href="#函数"><span>函数</span></a></h2>
 <p>Solidity语言的函数非常灵活，可以进行各种复杂操作。在本教程中，我们将会概述函数的基础概念，并通过一些示例演示如何使用函数。</p>
 <p>我们先看一下 Solidity 中函数的形式:</p>

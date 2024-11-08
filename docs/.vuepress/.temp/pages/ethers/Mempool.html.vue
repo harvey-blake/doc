@@ -1,4 +1,4 @@
-<template><div><h1 id="_19-监听mempool" tabindex="-1"><a class="header-anchor" href="#_19-监听mempool"><span>19. 监听Mempool</span></a></h1>
+<template><div><Layout/><h1 id="_19-监听mempool" tabindex="-1"><a class="header-anchor" href="#_19-监听mempool"><span>19. 监听Mempool</span></a></h1>
 <p>这一讲，我们将介绍如何读取<code v-pre>mempool</code>（交易内存池）中的交易。</p>
 <h2 id="mev" tabindex="-1"><a class="header-anchor" href="#mev"><span>MEV</span></a></h2>
 <p><code v-pre>MEV</code>（Maximal Extractable Value，最大可提取价值）是个令人着迷的话题。大部分人对它很陌生，因为在支持智能合约的区块链被发明之前它并不存在。它是科学家的盛宴，矿场的友人，散户的噩梦。</p>

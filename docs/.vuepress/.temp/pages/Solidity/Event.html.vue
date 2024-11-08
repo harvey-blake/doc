@@ -1,4 +1,4 @@
-<template><div><h1 id="_12-事件" tabindex="-1"><a class="header-anchor" href="#_12-事件"><span>12. 事件</span></a></h1>
+<template><div><Layout/><h1 id="_12-事件" tabindex="-1"><a class="header-anchor" href="#_12-事件"><span>12. 事件</span></a></h1>
 <p>我们用转账ERC20代币为例来介绍<code v-pre>Solidity</code>中的事件（<code v-pre>event</code>）。</p>
 <h2 id="事件" tabindex="-1"><a class="header-anchor" href="#事件"><span>事件</span></a></h2>
 <p><code v-pre>Solidity</code>中的事件（<code v-pre>event</code>）是<code v-pre>EVM</code>上日志的抽象，它具有两个特点：</p>

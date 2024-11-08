@@ -1,4 +1,4 @@
-<template><div><h1 id="_8-监听合约事件" tabindex="-1"><a class="header-anchor" href="#_8-监听合约事件"><span>8. 监听合约事件</span></a></h1>
+<template><div><Layout/><h1 id="_8-监听合约事件" tabindex="-1"><a class="header-anchor" href="#_8-监听合约事件"><span>8. 监听合约事件</span></a></h1>
 <h2 id="监听合约事件" tabindex="-1"><a class="header-anchor" href="#监听合约事件"><span>监听合约事件</span></a></h2>
 <h3 id="contract-on" tabindex="-1"><a class="header-anchor" href="#contract-on"><span><code v-pre>contract.on</code></span></a></h3>
 <p>在<code v-pre>ethersjs</code>中，合约对象有一个<code v-pre>contract.on</code>的监听方法，让我们持续监听合约的事件：</p>

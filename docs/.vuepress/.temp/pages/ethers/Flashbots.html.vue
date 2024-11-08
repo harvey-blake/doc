@@ -1,4 +1,4 @@
-<template><div><h1 id="_25-flashbots" tabindex="-1"><a class="header-anchor" href="#_25-flashbots"><span>25. Flashbots</span></a></h1>
+<template><div><Layout/><h1 id="_25-flashbots" tabindex="-1"><a class="header-anchor" href="#_25-flashbots"><span>25. Flashbots</span></a></h1>
 <blockquote>
 <p>目前 Flashbots Bundle 仅支持 ethers.js v5 版本。</p>
 </blockquote>

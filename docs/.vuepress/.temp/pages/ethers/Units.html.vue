@@ -1,4 +1,4 @@
-<template><div><h1 id="_10-bigint和单位转换" tabindex="-1"><a class="header-anchor" href="#_10-bigint和单位转换"><span>10. BigInt和单位转换</span></a></h1>
+<template><div><Layout/><h1 id="_10-bigint和单位转换" tabindex="-1"><a class="header-anchor" href="#_10-bigint和单位转换"><span>10. BigInt和单位转换</span></a></h1>
 <h2 id="bigint" tabindex="-1"><a class="header-anchor" href="#bigint"><span><code v-pre>BigInt</code></span></a></h2>
 <p>以太坊中，许多计算都对超出<code v-pre>JavaScript</code>整数的安全值（js中最大安全整数为<code v-pre>9007199254740991</code>）。因此，<code v-pre>ethers.js</code>使用 JavaScript ES2020 版本原生的 <code v-pre>BigInt</code> 类 安全地对任何数量级的数字进行数学运算。在<code v-pre>ethers.js</code>中，大多数需要返回值的操作将返回 <code v-pre>BigInt</code>，而接受值的参数也会接受它们。</p>
 <h3 id="创建bigint实例" tabindex="-1"><a class="header-anchor" href="#创建bigint实例"><span>创建<code v-pre>BigInt</code>实例</span></a></h3>

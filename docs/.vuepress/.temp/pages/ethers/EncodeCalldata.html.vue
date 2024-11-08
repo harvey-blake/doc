@@ -1,4 +1,4 @@
-<template><div><h1 id="_13-编码calldata" tabindex="-1"><a class="header-anchor" href="#_13-编码calldata"><span>13. 编码calldata</span></a></h1>
+<template><div><Layout/><h1 id="_13-编码calldata" tabindex="-1"><a class="header-anchor" href="#_13-编码calldata"><span>13. 编码calldata</span></a></h1>
 <p>我们将介绍<code v-pre>ethers.js</code>中的接口类，并利用它编码<code v-pre>calldata</code>。</p>
 <h2 id="接口类-interface" tabindex="-1"><a class="header-anchor" href="#接口类-interface"><span>接口类 Interface</span></a></h2>
 <p><code v-pre>ethers.js</code>的接口类抽象了与以太坊网络上的合约交互所需的<code v-pre>ABI</code>编码和解码。<code v-pre>ABI</code>（Application Binary Interface）与<code v-pre>API</code>类似，是一格式，用于对合约可以处理的各种类型的数据进行编码，以便它们可以交互。</p>

@@ -1,4 +1,4 @@
-<template><div><h1 id="_12-识别erc721合约" tabindex="-1"><a class="header-anchor" href="#_12-识别erc721合约"><span>12. 识别ERC721合约</span></a></h1>
+<template><div><Layout/><h1 id="_12-识别erc721合约" tabindex="-1"><a class="header-anchor" href="#_12-识别erc721合约"><span>12. 识别ERC721合约</span></a></h1>
 <p>我们介绍如何用<code v-pre>ether.js</code>识别一个合约是否为<code v-pre>ERC721</code>标准。</p>
 <h2 id="erc721" tabindex="-1"><a class="header-anchor" href="#erc721"><span><code v-pre>ERC721</code></span></a></h2>
 <p><code v-pre>ERC721</code>是以太坊上流行的非同质化代币（NFT）标准。在做NFT相关产品时，我们需要筛选出符合<code v-pre>ERC721</code>标准的合约。例如Opensea，他会自动识别<code v-pre>ERC721</code>，并爬下它的名称、代号、metadata等数据用于展示。要识别<code v-pre>ERC721</code>，我们先要理解<code v-pre>ERC165</code>。</p>

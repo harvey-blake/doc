@@ -1,4 +1,4 @@
-<template><div><h1 id="_6-引用类型-array-struct" tabindex="-1"><a class="header-anchor" href="#_6-引用类型-array-struct"><span>6. 引用类型, array, struct</span></a></h1>
+<template><div><Layout/><h1 id="_6-引用类型-array-struct" tabindex="-1"><a class="header-anchor" href="#_6-引用类型-array-struct"><span>6. 引用类型, array, struct</span></a></h1>
 <h2 id="数组-array" tabindex="-1"><a class="header-anchor" href="#数组-array"><span>数组 array</span></a></h2>
 <p>数组（<code v-pre>Array</code>）是<code v-pre>Solidity</code>常用的一种变量类型，用来存储一组数据（整数，字节，地址等等）。数组分为固定长度数组和可变长度数组两种：</p>
 <ul>

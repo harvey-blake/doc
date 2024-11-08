@@ -1,4 +1,4 @@
-<template><div><h1 id="_4-发送eth" tabindex="-1"><a class="header-anchor" href="#_4-发送eth"><span>4. 发送ETH</span></a></h1>
+<template><div><Layout/><h1 id="_4-发送eth" tabindex="-1"><a class="header-anchor" href="#_4-发送eth"><span>4. 发送ETH</span></a></h1>
 <h2 id="signer签名者类" tabindex="-1"><a class="header-anchor" href="#signer签名者类"><span><code v-pre>Signer</code>签名者类</span></a></h2>
 <p><code v-pre>Web3.js</code>认为用户会在本地部署以太坊节点，私钥和网络连接状态由这个节点管理（实际并不是这样）；而在<code v-pre>ethers.js</code>中，<code v-pre>Provider</code>提供器类管理网络连接状态，<code v-pre>Signer</code>签名者类或<code v-pre>Wallet</code>钱包类管理密钥，安全且灵活。</p>
 <p>在<code v-pre>ethers</code>中，<code v-pre>Signer</code>签名者类是以太坊账户的抽象，可用于对消息和交易进行签名，并将签名的交易发送到以太坊网络，并更改区块链状态。<code v-pre>Signer</code>类是抽象类，不能直接实例化，我们需要使用它的子类：<code v-pre>Wallet</code>钱包类。</p>

@@ -1,4 +1,4 @@
-<template><div><h1 id="_16-函数重载" tabindex="-1"><a class="header-anchor" href="#_16-函数重载"><span>16. 函数重载</span></a></h1>
+<template><div><Layout/><h1 id="_16-函数重载" tabindex="-1"><a class="header-anchor" href="#_16-函数重载"><span>16. 函数重载</span></a></h1>
 <h2 id="重载" tabindex="-1"><a class="header-anchor" href="#重载"><span>重载</span></a></h2>
 <p><code v-pre>Solidity</code>中允许函数进行重载（<code v-pre>overloading</code>），即名字相同但输入参数类型不同的函数可以同时存在，他们被视为不同的函数。注意，<code v-pre>Solidity</code>不允许修饰器（<code v-pre>modifier</code>）重载。</p>
 <h3 id="函数重载" tabindex="-1"><a class="header-anchor" href="#函数重载"><span>函数重载</span></a></h3>

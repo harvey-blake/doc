@@ -1,4 +1,4 @@
-<template><div><h1 id="_20-解码交易详情" tabindex="-1"><a class="header-anchor" href="#_20-解码交易详情"><span>20. 解码交易详情</span></a></h1>
+<template><div><Layout/><h1 id="_20-解码交易详情" tabindex="-1"><a class="header-anchor" href="#_20-解码交易详情"><span>20. 解码交易详情</span></a></h1>
 <p>这一讲，我们以未决交易（Pending Transaction）为例，介绍如何解码交易详情。</p>
 <h2 id="未决交易" tabindex="-1"><a class="header-anchor" href="#未决交易"><span>未决交易</span></a></h2>
 <p>未决交易是用户发出但没被矿工打包上链的交易，在mempool（交易内存池）中出现。</p>

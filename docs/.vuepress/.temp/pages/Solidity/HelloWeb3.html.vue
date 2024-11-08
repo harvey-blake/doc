@@ -1,4 +1,4 @@
-<template><div><h1 id="_1-hello-web3-三行代码" tabindex="-1"><a class="header-anchor" href="#_1-hello-web3-三行代码"><span>1. Hello Web3 (三行代码)</span></a></h1>
+<template><div><Layout/><h1 id="_1-hello-web3-三行代码" tabindex="-1"><a class="header-anchor" href="#_1-hello-web3-三行代码"><span>1. Hello Web3 (三行代码)</span></a></h1>
 <h2 id="solidity-简介" tabindex="-1"><a class="header-anchor" href="#solidity-简介"><span>Solidity 简介</span></a></h2>
 <p><code v-pre>Solidity</code> 是一种用于编写以太坊虚拟机（<code v-pre>EVM</code>）智能合约的编程语言。我认为掌握 <code v-pre>Solidity</code> 是参与链上项目的必备技能：区块链项目大部分是开源的，如果你能读懂代码，就可以规避很多亏钱项目。</p>
 <p><code v-pre>Solidity</code> 具有两个特点：</p>

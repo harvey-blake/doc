@@ -1,4 +1,4 @@
-<template><div><h1 id="_14-抽象合约和接口" tabindex="-1"><a class="header-anchor" href="#_14-抽象合约和接口"><span>14. 抽象合约和接口</span></a></h1>
+<template><div><Layout/><h1 id="_14-抽象合约和接口" tabindex="-1"><a class="header-anchor" href="#_14-抽象合约和接口"><span>14. 抽象合约和接口</span></a></h1>
 <p>我们用<code v-pre>ERC721</code>的接口合约为例介绍<code v-pre>Solidity</code>中的抽象合约（<code v-pre>abstract</code>）和接口（<code v-pre>interface</code>），帮助大家更好的理解<code v-pre>ERC721</code>标准。</p>
 <h2 id="抽象合约" tabindex="-1"><a class="header-anchor" href="#抽象合约"><span>抽象合约</span></a></h2>
 <p>如果一个智能合约里至少有一个未实现的函数，即某个函数缺少主体<code v-pre>{}</code>中的内容，则必须将该合约标为<code v-pre>abstract</code>，不然编译会报错；另外，未实现的函数需要加<code v-pre>virtual</code>，以便子合约重写。拿我们之前的<RouteLink to="/Solidity/InsertionSort.html">插入排序合约</RouteLink>为例，如果我们还没想好具体怎么实现插入排序函数，那么可以把合约标为<code v-pre>abstract</code>，之后让别人补写上。</p>

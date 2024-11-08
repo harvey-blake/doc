@@ -1,4 +1,4 @@
-<template><div><h1 id="_24-识别erc20合约" tabindex="-1"><a class="header-anchor" href="#_24-识别erc20合约"><span>24. 识别ERC20合约</span></a></h1>
+<template><div><Layout/><h1 id="_24-识别erc20合约" tabindex="-1"><a class="header-anchor" href="#_24-识别erc20合约"><span>24. 识别ERC20合约</span></a></h1>
 <p>我们介绍如何用<code v-pre>ethers.js</code>识别一个合约是否为<code v-pre>ERC20</code>标准，你会在链上分析，识别貔貅，抢开盘等场景用到它。</p>
 <h2 id="erc20" tabindex="-1"><a class="header-anchor" href="#erc20"><span><code v-pre>ERC20</code></span></a></h2>
 <p><code v-pre>ERC20</code> 是以太坊上最常用的代币标准，<code v-pre>ERC20</code> 标准包含以下函数和事件:</p>

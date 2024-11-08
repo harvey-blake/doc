@@ -1,4 +1,4 @@
-<template><div><h1 id="_11-构造函数和修饰器" tabindex="-1"><a class="header-anchor" href="#_11-构造函数和修饰器"><span>11. 构造函数和修饰器</span></a></h1>
+<template><div><Layout/><h1 id="_11-构造函数和修饰器" tabindex="-1"><a class="header-anchor" href="#_11-构造函数和修饰器"><span>11. 构造函数和修饰器</span></a></h1>
 <p>我们将用合约权限控制（<code v-pre>Ownable</code>）的例子介绍<code v-pre>Solidity</code>语言中构造函数（<code v-pre>constructor</code>）和独有的修饰器（<code v-pre>modifier</code>）。</p>
 <h2 id="构造函数" tabindex="-1"><a class="header-anchor" href="#构造函数"><span>构造函数</span></a></h2>
 <p>构造函数（<code v-pre>constructor</code>）是一种特殊的函数，每个合约可以定义一个，并在部署合约的时候自动运行一次。它可以用来初始化合约的一些参数，例如初始化合约的<code v-pre>owner</code>地址：</p>

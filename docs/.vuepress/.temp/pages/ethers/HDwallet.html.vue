@@ -1,4 +1,4 @@
-<template><div><h1 id="_14-批量生成钱包" tabindex="-1"><a class="header-anchor" href="#_14-批量生成钱包"><span>14. 批量生成钱包</span></a></h1>
+<template><div><Layout/><h1 id="_14-批量生成钱包" tabindex="-1"><a class="header-anchor" href="#_14-批量生成钱包"><span>14. 批量生成钱包</span></a></h1>
 <p>我们将介绍HD钱包，并写一个批量生成钱包的脚本。</p>
 <h2 id="hd钱包" tabindex="-1"><a class="header-anchor" href="#hd钱包"><span>HD钱包</span></a></h2>
 <p>HD钱包（Hierarchical Deterministic Wallet，多层确定性钱包）是一种数字钱包 ，通常用于存储比特币和以太坊等加密货币持有者的数字密钥。通过它，用户可以从一个随机种子创建一系列密钥对，更加便利、安全、隐私。要理解HD钱包，我们需要简单了解比特币的<a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki" target="_blank" rel="noopener noreferrer">BIP32</a>，<a href="https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki" target="_blank" rel="noopener noreferrer">BIP44</a>，和<a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki" target="_blank" rel="noopener noreferrer">BIP39</a>。</p>

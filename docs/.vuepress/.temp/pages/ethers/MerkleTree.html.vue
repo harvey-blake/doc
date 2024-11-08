@@ -1,4 +1,4 @@
-<template><div><h1 id="_17-merkletree脚本" tabindex="-1"><a class="header-anchor" href="#_17-merkletree脚本"><span>17. MerkleTree脚本</span></a></h1>
+<template><div><Layout/><h1 id="_17-merkletree脚本" tabindex="-1"><a class="header-anchor" href="#_17-merkletree脚本"><span>17. MerkleTree脚本</span></a></h1>
 <p>这一讲我们写一个利用<code v-pre>Merkle Tree</code>白名单铸造<code v-pre>NFT</code>的脚本，如果你对<code v-pre>Merkle Tree</code>合约不熟悉.</p>
 <h2 id="merkle-tree" tabindex="-1"><a class="header-anchor" href="#merkle-tree"><span>Merkle Tree</span></a></h2>
 <p><code v-pre>Merkle Tree</code>，也叫默克尔树或哈希树，是区块链的底层加密技术，被比特币和以太坊区块链广泛采用。<code v-pre>Merkle Tree</code>是一种自下而上构建的加密树，每个叶子是对应数据的哈希，而每个非叶子为它的<code v-pre>2</code>个子节点的哈希。</p>

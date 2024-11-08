@@ -2,6 +2,12 @@ import { defaultTheme } from '@vuepress/theme-default';
 import { defineUserConfig } from 'vuepress/cli';
 import { webpackBundler } from '@vuepress/bundler-webpack';
 import { searchPlugin } from '@vuepress/plugin-search'
+// 注册全局组件
+import { getDirname, path } from '@vuepress/utils'
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+const __dirname = getDirname(import.meta.url)
+
+import customHomePlugin from './plugins/custom-home-plugin/index.js'
 
 
 const ethers = [
@@ -56,10 +62,11 @@ const solidity = [
 export default defineUserConfig({
   lang: 'zh-CN',
   title: 'Harvey Blake',
-  description: '专注于核心技术和工具的使用方法、最佳实践及常见问题解决方案，为您的开发提供帮助！',
+  description: '白天搞智能合约，晚上撸前端代码，只要咖啡还续着，凌晨照样在线！会说 Solidity、PHP、Node.js，还有 Vue 和 HTML 的“方言”，代码不怕我不写，就怕写完跑太快。Bug？那都是小场面，一出手就搞定。我的宗旨是——交付准时，调试无敌，客户满意才是真理！',
 
   plugins: [
-
+    registerComponentsPlugin({ componentsDir: path.resolve(__dirname, './components') }),
+    customHomePlugin,
     searchPlugin({
 
       locales: {
@@ -71,6 +78,7 @@ export default defineUserConfig({
 
       maxSuggestions: 10, // 最大显示的搜索建议条目数量
     }),
+
   ],
 
 
@@ -95,6 +103,7 @@ export default defineUserConfig({
 
     ],
     sidebar: {
+      '/': false,
       // 对于 /ethers/ 下的页面，显示 Ethers 极简教程的侧边栏
       '/ethers/': [
         {

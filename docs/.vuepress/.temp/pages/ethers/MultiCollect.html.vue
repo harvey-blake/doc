@@ -1,4 +1,4 @@
-<template><div><h1 id="_16-批量归集" tabindex="-1"><a class="header-anchor" href="#_16-批量归集"><span>16. 批量归集</span></a></h1>
+<template><div><Layout/><h1 id="_16-批量归集" tabindex="-1"><a class="header-anchor" href="#_16-批量归集"><span>16. 批量归集</span></a></h1>
 <p>这一讲，我们介绍如何使用<code v-pre>ethers.js</code>将多个钱包的<code v-pre>ETH</code>和代币归集到一个钱包中。</p>
 <h2 id="批量归集" tabindex="-1"><a class="header-anchor" href="#批量归集"><span>批量归集</span></a></h2>
 <p>在链上交互、撸毛之后，就需要将多个钱包的资产进行归集管理。你可以用<RouteLink to="/ethers/HDwallet.html">HD钱包</RouteLink>或者保存多份密钥的方式操作多个钱包，然后用<code v-pre>ethers.js</code>脚本完成归集。下面我们分别示范归集<code v-pre>ETH</code>（原生代币）和<code v-pre>WETH</code>（ERC20代币）。</p>

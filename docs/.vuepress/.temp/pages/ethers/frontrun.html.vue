@@ -1,4 +1,4 @@
-<template><div><h1 id="_23-抢先交易脚本" tabindex="-1"><a class="header-anchor" href="#_23-抢先交易脚本"><span>23. 抢先交易脚本</span></a></h1>
+<template><div><Layout/><h1 id="_23-抢先交易脚本" tabindex="-1"><a class="header-anchor" href="#_23-抢先交易脚本"><span>23. 抢先交易脚本</span></a></h1>
 <p>这一讲，我们将介绍抢先交易（Front-running，抢跑）的脚本。</p>
 <p><img src="@source/ethers/img/23-1.png" alt=""></p>
 <h2 id="freemint-nft合约" tabindex="-1"><a class="header-anchor" href="#freemint-nft合约"><span>Freemint NFT合约</span></a></h2>

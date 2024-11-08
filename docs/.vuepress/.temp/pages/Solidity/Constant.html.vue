@@ -1,4 +1,4 @@
-<template><div><h1 id="_9-常数-constant和immutable" tabindex="-1"><a class="header-anchor" href="#_9-常数-constant和immutable"><span>9. 常数 constant和immutable</span></a></h1>
+<template><div><Layout/><h1 id="_9-常数-constant和immutable" tabindex="-1"><a class="header-anchor" href="#_9-常数-constant和immutable"><span>9. 常数 constant和immutable</span></a></h1>
 <p>介绍Solidity中和常量相关的两个关键字，<code v-pre>constant</code>（常量）和<code v-pre>immutable</code>（不变量）。状态变量声明这两个关键字之后，不能在初始化后更改数值。这样做的好处是提升合约的安全性并节省<code v-pre>gas</code>。</p>
 <p>另外，只有数值变量可以声明<code v-pre>constant</code>和<code v-pre>immutable</code>；<code v-pre>string</code>和<code v-pre>bytes</code>可以声明为<code v-pre>constant</code>，但不能为<code v-pre>immutable</code>。</p>
 <h2 id="constant和immutable" tabindex="-1"><a class="header-anchor" href="#constant和immutable"><span>constant和immutable</span></a></h2>

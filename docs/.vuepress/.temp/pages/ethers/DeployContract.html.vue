@@ -1,4 +1,4 @@
-<template><div><h1 id="_6-部署合约" tabindex="-1"><a class="header-anchor" href="#_6-部署合约"><span>6. 部署合约</span></a></h1>
+<template><div><Layout/><h1 id="_6-部署合约" tabindex="-1"><a class="header-anchor" href="#_6-部署合约"><span>6. 部署合约</span></a></h1>
 <h2 id="部署智能合约" tabindex="-1"><a class="header-anchor" href="#部署智能合约"><span>部署智能合约</span></a></h2>
 <p>在以太坊上，智能合约的部署是一种特殊的交易：将编译智能合约得到的字节码发送到0地址。如果这个合约的构造函数有参数的话，需要利用<code v-pre>abi.encode</code>将参数编码为字节码，然后附在在合约字节码的尾部一起发送。</p>
 <h2 id="合约工厂" tabindex="-1"><a class="header-anchor" href="#合约工厂"><span>合约工厂</span></a></h2>

@@ -1,4 +1,4 @@
-<template><div><h1 id="_11-staticcall" tabindex="-1"><a class="header-anchor" href="#_11-staticcall"><span>11. StaticCall</span></a></h1>
+<template><div><Layout/><h1 id="_11-staticcall" tabindex="-1"><a class="header-anchor" href="#_11-staticcall"><span>11. StaticCall</span></a></h1>
 <p>介绍合约类的<code v-pre>staticCall</code>方法，在发送交易之前检查交易是否会失败，节省大量gas。</p>
 <p><code v-pre>staticCall</code>方法是属于<code v-pre>ethers.Contract</code>类的编写方法分析，同类的还有<code v-pre>populateTransaction</code>和<code v-pre>estimateGas</code>方法。</p>
 <h2 id="可能失败的交易" tabindex="-1"><a class="header-anchor" href="#可能失败的交易"><span>可能失败的交易</span></a></h2>

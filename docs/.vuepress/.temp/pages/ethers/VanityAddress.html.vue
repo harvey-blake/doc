@@ -1,4 +1,4 @@
-<template><div><h1 id="_21-靓号生成器" tabindex="-1"><a class="header-anchor" href="#_21-靓号生成器"><span>21. 靓号生成器</span></a></h1>
+<template><div><Layout/><h1 id="_21-靓号生成器" tabindex="-1"><a class="header-anchor" href="#_21-靓号生成器"><span>21. 靓号生成器</span></a></h1>
 <p>这一讲，我们介绍如何利用<code v-pre>ethers.js</code>生成靓号地址，这是一个价值$1.6亿的教程（并不）。</p>
 <h2 id="靓号地址" tabindex="-1"><a class="header-anchor" href="#靓号地址"><span>靓号地址</span></a></h2>
 <p>现实生活中，有人追求车牌号“888888”，而在区块链中，大家也追求“靓号地址”。靓号地址（Vanity Address）是个性化的地址，易于识别，并且具有与其它地址一样的安全性。比如以<code v-pre>7</code>个<code v-pre>0</code>开头的地址：</p>

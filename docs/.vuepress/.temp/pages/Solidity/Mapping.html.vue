@@ -1,4 +1,4 @@
-<template><div><h1 id="_7-映射类型-mapping" tabindex="-1"><a class="header-anchor" href="#_7-映射类型-mapping"><span>7. 映射类型 mapping</span></a></h1>
+<template><div><Layout/><h1 id="_7-映射类型-mapping" tabindex="-1"><a class="header-anchor" href="#_7-映射类型-mapping"><span>7. 映射类型 mapping</span></a></h1>
 <h2 id="映射mapping" tabindex="-1"><a class="header-anchor" href="#映射mapping"><span>映射Mapping</span></a></h2>
 <p>在映射中，人们可以通过键（<code v-pre>Key</code>）来查询对应的值（<code v-pre>Value</code>），比如：通过一个人的<code v-pre>id</code>来查询他的钱包地址。</p>
 <p>声明映射的格式为<code v-pre>mapping(_KeyType =&gt; _ValueType)</code>，其中<code v-pre>_KeyType</code>和<code v-pre>_ValueType</code>分别是<code v-pre>Key</code>和<code v-pre>Value</code>的变量类型。例子：</p>

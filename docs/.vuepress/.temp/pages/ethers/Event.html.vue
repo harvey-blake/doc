@@ -1,4 +1,4 @@
-<template><div><h1 id="_7-检索事件" tabindex="-1"><a class="header-anchor" href="#_7-检索事件"><span>7. 检索事件</span></a></h1>
+<template><div><Layout/><h1 id="_7-检索事件" tabindex="-1"><a class="header-anchor" href="#_7-检索事件"><span>7. 检索事件</span></a></h1>
 <h2 id="事件-event" tabindex="-1"><a class="header-anchor" href="#事件-event"><span>事件 Event</span></a></h2>
 <p>智能合约释放出的事件存储于以太坊虚拟机的日志中。日志分为两个主题<code v-pre>topics</code>和数据<code v-pre>data</code>部分，其中事件哈希和<code v-pre>indexed</code>变量存储在<code v-pre>topics</code>中，作为索引方便以后搜索；没有<code v-pre>indexed</code>变量存储在<code v-pre>data</code>中，不能被直接检索，但可以存储更复杂的数据结构。</p>
 <p>以ERC20代币中的<code v-pre>Transfer</code>转账事件为例，在合约中它是这样声明的：</p>

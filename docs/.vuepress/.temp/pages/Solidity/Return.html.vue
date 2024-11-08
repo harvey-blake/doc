@@ -1,4 +1,4 @@
-<template><div><h1 id="_4-函数输出" tabindex="-1"><a class="header-anchor" href="#_4-函数输出"><span>4. 函数输出</span></a></h1>
+<template><div><Layout/><h1 id="_4-函数输出" tabindex="-1"><a class="header-anchor" href="#_4-函数输出"><span>4. 函数输出</span></a></h1>
 <h2 id="返回值-return-和-returns" tabindex="-1"><a class="header-anchor" href="#返回值-return-和-returns"><span>返回值：return 和 returns</span></a></h2>
 <p>Solidity 中与函数输出相关的有两个关键字：<code v-pre>return</code>和<code v-pre>returns</code>。它们的区别在于：</p>
 <ul>

@@ -1,4 +1,4 @@
-<template><div><h1 id="_5-变量数据存储和作用域" tabindex="-1"><a class="header-anchor" href="#_5-变量数据存储和作用域"><span>5. 变量数据存储和作用域</span></a></h1>
+<template><div><Layout/><h1 id="_5-变量数据存储和作用域" tabindex="-1"><a class="header-anchor" href="#_5-变量数据存储和作用域"><span>5. 变量数据存储和作用域</span></a></h1>
 <h2 id="solidity中的引用类型" tabindex="-1"><a class="header-anchor" href="#solidity中的引用类型"><span>Solidity中的引用类型</span></a></h2>
 <p><strong>引用类型(Reference Type)</strong>：包括数组（<code v-pre>array</code>）和结构体（<code v-pre>struct</code>），由于这类变量比较复杂，占用存储空间大，我们在使用时必须要声明数据存储的位置。</p>
 <h2 id="数据位置" tabindex="-1"><a class="header-anchor" href="#数据位置"><span>数据位置</span></a></h2>

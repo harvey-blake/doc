@@ -1,4 +1,4 @@
-<template><div><h1 id="_10-控制流-用solidity实现插入排序" tabindex="-1"><a class="header-anchor" href="#_10-控制流-用solidity实现插入排序"><span>10. 控制流，用Solidity实现插入排序</span></a></h1>
+<template><div><Layout/><h1 id="_10-控制流-用solidity实现插入排序" tabindex="-1"><a class="header-anchor" href="#_10-控制流-用solidity实现插入排序"><span>10. 控制流，用Solidity实现插入排序</span></a></h1>
 <p>介绍<code v-pre>Solidity</code>中的控制流，然后讲如何用<code v-pre>Solidity</code>实现插入排序（<code v-pre>InsertionSort</code>），一个看起来简单，但实际上很容易写出<code v-pre>bug</code>的程序。</p>
 <h2 id="控制流" tabindex="-1"><a class="header-anchor" href="#控制流"><span>控制流</span></a></h2>
 <p><code v-pre>Solidity</code>的控制流与其他语言类似，主要包含以下几种：</p>

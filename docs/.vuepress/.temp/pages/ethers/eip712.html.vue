@@ -1,4 +1,4 @@
-<template><div><h1 id="_26-eip712-签名脚本" tabindex="-1"><a class="header-anchor" href="#_26-eip712-签名脚本"><span>26. EIP712 签名脚本</span></a></h1>
+<template><div><Layout/><h1 id="_26-eip712-签名脚本" tabindex="-1"><a class="header-anchor" href="#_26-eip712-签名脚本"><span>26. EIP712 签名脚本</span></a></h1>
 <p>在本教程中，我们将介绍如何使用 Ethers.js 写 EIP712 签名脚本。</p>
 <h2 id="eip712" tabindex="-1"><a class="header-anchor" href="#eip712"><span>EIP712</span></a></h2>
 <p><a href="https://eips.ethereum.org/EIPS/eip-712" target="_blank" rel="noopener noreferrer">EIP712 类型化数据签名</a>提供了一种更高级、更安全的签名方法。当支持 EIP712 的 Dapp 请求签名时，钱包会展示签名消息的原始数据，用户可以在验证数据符合预期之后签名。此外，你也可以使用脚本生成 EIP712 签名。</p>

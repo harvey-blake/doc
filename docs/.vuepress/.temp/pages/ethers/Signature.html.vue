@@ -1,4 +1,4 @@
-<template><div><h1 id="_18-数字签名脚本" tabindex="-1"><a class="header-anchor" href="#_18-数字签名脚本"><span>18. 数字签名脚本</span></a></h1>
+<template><div><Layout/><h1 id="_18-数字签名脚本" tabindex="-1"><a class="header-anchor" href="#_18-数字签名脚本"><span>18. 数字签名脚本</span></a></h1>
 <p>这一讲，我们介绍一个利用链下签名作为白名单发放<code v-pre>NFT</code>的方法。</p>
 <h2 id="数字签名" tabindex="-1"><a class="header-anchor" href="#数字签名"><span>数字签名</span></a></h2>
 <p>如果你用过<code v-pre>opensea</code>交易<code v-pre>NFT</code>，对签名就不会陌生。下图是小狐狸（<code v-pre>metamask</code>）钱包进行签名时弹出的窗口，它可以证明你拥有私钥的同时不需要对外公布私钥。</p>

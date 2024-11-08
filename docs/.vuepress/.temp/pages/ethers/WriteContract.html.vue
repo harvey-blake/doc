@@ -1,4 +1,4 @@
-<template><div><h1 id="_5-合约交互" tabindex="-1"><a class="header-anchor" href="#_5-合约交互"><span>5. 合约交互</span></a></h1>
+<template><div><Layout/><h1 id="_5-合约交互" tabindex="-1"><a class="header-anchor" href="#_5-合约交互"><span>5. 合约交互</span></a></h1>
 <h2 id="创建可写contract变量" tabindex="-1"><a class="header-anchor" href="#创建可写contract变量"><span>创建可写<code v-pre>Contract</code>变量</span></a></h2>
 <p>声明可写的<code v-pre>Contract</code>变量的规则：</p>
 <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre><code><span class="line"><span class="token keyword">const</span> contract <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ethers<span class="token punctuation">.</span>Contract</span><span class="token punctuation">(</span>address<span class="token punctuation">,</span> abi<span class="token punctuation">,</span> signer<span class="token punctuation">)</span></span>

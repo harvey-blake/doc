@@ -1,4 +1,4 @@
-<template><div><h1 id="_13-继承" tabindex="-1"><a class="header-anchor" href="#_13-继承"><span>13. 继承</span></a></h1>
+<template><div><Layout/><h1 id="_13-继承" tabindex="-1"><a class="header-anchor" href="#_13-继承"><span>13. 继承</span></a></h1>
 <p>我最近在重新学 Solidity，巩固一下细节，也写一个“WTF Solidity极简入门”，供小白们使用（编程大佬可以另找教程），每周更新 1-3 讲。</p>
 <p>推特：<a href="https://twitter.com/0xAA_Science" target="_blank" rel="noopener noreferrer">@0xAA_Science</a>｜<a href="https://twitter.com/WTFAcademy_" target="_blank" rel="noopener noreferrer">@WTFAcademy_</a></p>
 <p>社区：<a href="https://discord.gg/5akcruXrsk" target="_blank" rel="noopener noreferrer">Discord</a>｜<a href="https://docs.google.com/forms/d/e/1FAIpQLSe4KGT8Sh6sJ7hedQRuIYirOoZK_85miz3dw7vA1-YjodgJ-A/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">微信群</a>｜<a href="https://wtf.academy" target="_blank" rel="noopener noreferrer">官网 wtf.academy</a></p>

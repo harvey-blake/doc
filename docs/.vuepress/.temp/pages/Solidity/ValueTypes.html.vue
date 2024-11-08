@@ -1,4 +1,4 @@
-<template><div><h1 id="_2-值类型" tabindex="-1"><a class="header-anchor" href="#_2-值类型"><span>2. 值类型</span></a></h1>
+<template><div><Layout/><h1 id="_2-值类型" tabindex="-1"><a class="header-anchor" href="#_2-值类型"><span>2. 值类型</span></a></h1>
 <h2 id="solidity中的变量类型" tabindex="-1"><a class="header-anchor" href="#solidity中的变量类型"><span>Solidity中的变量类型</span></a></h2>
 <ol>
 <li>

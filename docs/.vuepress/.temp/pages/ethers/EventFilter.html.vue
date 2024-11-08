@@ -1,4 +1,4 @@
-<template><div><h1 id="_9-事件过滤" tabindex="-1"><a class="header-anchor" href="#_9-事件过滤"><span>9. 事件过滤</span></a></h1>
+<template><div><Layout/><h1 id="_9-事件过滤" tabindex="-1"><a class="header-anchor" href="#_9-事件过滤"><span>9. 事件过滤</span></a></h1>
 <h2 id="过滤器" tabindex="-1"><a class="header-anchor" href="#过滤器"><span>过滤器</span></a></h2>
 <p>当合约创建日志（释放事件）时，它最多可以包含[4]条数据作为索引（<code v-pre>indexed</code>）。索引数据经过哈希处理并包含在<a href="https://en.wikipedia.org/wiki/Bloom_filter" target="_blank" rel="noopener noreferrer">布隆过滤器</a>中，这是一种允许有效过滤的数据结构。因此，一个事件过滤器最多包含<code v-pre>4</code>个主题集，每个主题集是个条件，用于筛选目标事件。规则：</p>
 <ul>

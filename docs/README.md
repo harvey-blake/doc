@@ -1,9 +1,12 @@
 ---
+
 home: true
+layout: Layout  # 使用自定义的 Layout.vue 布局
 title: 首页
+
 heroImage: ./images/logo.png
 actions:
-  - text: 联系作者
+  - text: 联系我们
     link: https://t.me/eduvue
     type: primary
 
@@ -20,7 +23,5 @@ features:
 
 footer: MIT 协议 | 版权所有 © 2018-至今 Harvey Blake
 ---
-
 这些文档不仅是我的技术总结，也希望能为有类似需求的人提供帮助。如果你有任何建议或想法，欢迎一起讨论！
-
 
